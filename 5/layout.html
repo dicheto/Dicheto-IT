@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgb(78, 78, 78);
+            color: white;
+            padding: 30px;
+            font-size: 36px;
+            text-align: center;
+        }
+        /* 2 колони - aside и section */
+        aside {
+            width: 30%;
+            float: left;
+            height: 300px; 
+            background-color: gray;
+            padding: 20px;
+        }
+        nav > ul {
+            list-style-type: none;
+            padding: 0;
+            /* НЕЗАДЪЛЖИТЕЛНО: */
+            margin: 0;
+            
+        }
+        article {
+            width: 70%;
+            /* За да излезе както трябва на всички елементи, които са един до друг трябва да пишем на всички float: left */
+            float: left;
+            height: 300px;
+            background-color: rgb(167, 167, 167);
+            padding: 20px;
+        }
+        /* Правилно оразмеряване - Първи начин */
+        section::after {
+            content: "";
+            clear:both;
+            display: table;
+        }
+        footer {
+            background-color: rgb(78, 78, 78);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        /* Оптимизация за по-малки екрани */
+        @media (max-width:600px){
+            aside, article{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- ЗАГЛАВИЕ -->
+        <h2>Hello World</h2>
+        <!-- НАВИГАЦИЯ -->
+        <nav>
+
+        </nav>
+    </header>
+    <!-- СТРАНИЧНО МЕНЮ -->
+    <!-- shortcut - aside>nav>ul>li*3>a -->
+    <section>
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href="http://">Home</a></li>
+                        <li><a href="http://">About Us</a></li>
+                        <li><a href="http://">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <article>
+                <h3>Hello World!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat tenetur ullam quibusdam sunt nulla
+                    molestias possimus debitis, ut modi et quis deleniti doloremque magni, quam deserunt, fugit corporis
+                    repellendus?</p>
+            </article>
+    </section>
+
+
+
+
+    <!-- <main>
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+    </main> -->
+
+
+
+    <!-- За правилно разположение - алтернативен начин: -->
+    <!-- <div style="clear:both"></div> -->
+    <footer>
+        <!-- <nav></nav> -->
+        <h4>Copyright</h4>
+    </footer>
+</body>
+
+</html>

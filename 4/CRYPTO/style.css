@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+.Title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+body {
+    background-color: #f5f6f9;
+}
+.rows {
+    height: 67px;
+    display: flex;
+}
+.names {
+    display: flex;
+    width: 262px;
+}
+.textalign {
+    width: 177px;
+    height: 67px;
+    margin-right: 16px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.chart {
+    width: 110px;
+    height: 30px;
+    margin-right: 16px;
+    margin-top: 25px;
+    /* margin-bottom: 25px; */
+}
+table {
+    margin-left: 231px;
+    margin-right: 231px;
+}
+.number {
+    width: 56px;
+    height: 67px;
+    margin-right: 16px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.buttonalign {
+    width: 102.45px;
+    height: 67px;
+}
+.button {
+    border: none;
+    width: 70.45px;
+    height: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #1199FA;
+    color: white;
+    /* padding: 16px; */
+    border-radius: 16px;
+}
+.logos {
+    width: 24px;
+    height: 24px;
+    margin-top: 17px;
+    margin-right: 5px;
+}
+.alligntextname {
+    text-align: left;
+    
+}
+.firstrow {
+    height: 42px;
+    display: flex;
+    width: 1364px;
+    font-size: 12px;
+    
+    
+}
+.fnum {
+    width: 56px;
+    margin-right: -7px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    
+}
+.fstar {
+    width: 56px;
+    margin-right: 13px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.fname {
+    display: flex;
+    /* margin-right: 16px; */
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    width: 262px;
+    height: 42px;
+}
+.ftextalign {
+    width: 177px;
+    margin-right: 16px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.frowtextallign {
+    width: 177px;
+    margin-right: 16px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: right;
+    font-size: 12px;
+}
+.subnames {
+    font-size: 14px;
+    color: #5d667b;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.positive {
+    text-align: right;
+    color: green;
+}
+tbody>tr>:nth-child(4){ 
+    text-align: right;
+    width: 168px;
+    font-size: 14px;
+
+}
+tbody>tr>:nth-child(5){ 
+    text-align: right;
+    width: 177px;
+    font-size: 14px;
+
+}
+tbody>tr>:nth-child(6){ 
+    text-align: right;
+    width: 176px;
+    font-size: 14px;
+
+}
+tbody>tr>:nth-child(7){ 
+    text-align: right;
+    width: 176px;
+    font-size: 14px;
+
+}
+tbody>tr>:nth-child(8){ 
+    text-align: right;
+    width: 176px;
+    font-size: 14px;
+}
+table {
+    background-color: white;
+}
+tbody>tr {
+    border-bottom: 1px solid #C9CFDD;
+}
+tbody>:nth-child(1) {
+    height: 42px;
+    
+}
+.blockaddtofav {
+    width: 66px;
+    height: 68px;
+}
+.addtofav {
+    width: 34px;
+    height: 34px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    
+}
+tr:hover {
+    background-color: rgba(17, 153, 250, 0.12);
+}
+.diagram {
+    width: 35%;
+    text-align: right;
+    margin-left: 100px;
+}
