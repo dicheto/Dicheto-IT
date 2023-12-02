@@ -125,3 +125,31 @@ h3 {
 
 
 /* :first-child */
+
+
+.app-icon {
+    width: 150px;
+}
+
+.city-images {
+    height:150px;
+   ;
+}
+
+.city-text {
+    text-align: start;
+}
+
+ul {
+    padding-left: 0;
+}
+.icons-social {
+    width: 30px;
+}
+
+a {
+    color: orangered;
+}
+a:active, a:link {
+    color: orangered;
+}
