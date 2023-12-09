@@ -11,6 +11,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 
 }
 html, body {
@@ -154,5 +155,106 @@ a:active, a:link {
     color: orangered;
 }
 
+.col-bg {
+    /* background-color: rgba(255, 255, 255, 0.589);
+    border-radius: 20px; */
+}
+
+.paragraph-reviews::before , .paragraph-reviews::after {
+    content:'"';
+    font-size: 35px;
+}
 
 /* object-fit:cover; */
+
+
+
+/* TESTIMONIALS */
+
+.section-reviews {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+.section-reviews>h2 {
+    color: white;
+}
+
+.p-reviews {
+    font-style: italic;
+}
+
+blockquote {
+    position: relative;
+}
+.p-reviews::before {
+    content: '"';
+    font-size: 500%;
+    display: block;
+    /* RELATIVE ми трябва отвън, за да използвам Absolute вътре */
+    position: absolute;
+    top: -50px;
+}
+
+
+.footer-nav li, .icons-mid li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav, .icons-mid {
+    list-style: none;
+}
+.icons-mid {
+    float: right;
+}
+.footer-nav li:last-child, .icons-mid li:last-child{
+    margin-right: 0px;
+}
+
+footer {
+    background-color: black;
+    color: #ff0000;
+
+}
+.footer-links {
+    color: #ff0000;
+}
+.footer-links:hover {
+    color: blue;
+}
+.footer-nav li:visited, .icons-mid li:visited,.footer-nav li:active, .icons-mid li:active,.footer-nav li:hover, .icons-mid li:hover {
+    color: blue;
+    transition: 0.5s;
+}
+
+.icon-subscriptions {
+    padding-right: 10px;
+    color: orangered;
+}
+.subscription-price {
+    font-size: 200%;
+}
+.subscription-price, .month-subscription {
+    color: orangered;
+}
+.border-top-subscription {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.col-bg-2 {
+    background-color: white;
+    
+}
+.sub-btn {
+    background: orangered;
+}
+.sub-btn:visited, .sub-btn:hover {
+    background: red;
+}
+
+.col-sub-border {
+    border-radius: 10px;
+}
