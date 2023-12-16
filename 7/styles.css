@@ -76,13 +76,17 @@ h3 {
 }
 /* BUTTONS */
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: orange;
     border: 1px solid orange;
     color: white;
     margin-right: 30px;
 }
-.btn-full:hover, .btn-full:active{
+.btn-full:hover, 
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     background-color: orangered;
     border:1px solid orangered;
 }
@@ -94,7 +98,8 @@ h3 {
     background-color: orange;
 }
 .ourbtn,
-.ourbtn:visited {
+.ourbtn:visited,
+input[type=submit] {
     padding: 10px 30px;
     text-decoration: none;
     border-radius: 10px;
@@ -257,4 +262,56 @@ footer {
 
 .col-sub-border {
     border-radius: 10px;
+}
+
+
+/* CONTACT INFO */
+.contact-form {
+    width: 60%;
+}
+.submit-button {
+    width: auto;
+    
+
+}
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 3px solid #ccc;
+}
+
+textarea {
+    height: 150px;
+}
+input[type=checkbox] {
+    margin: 10px 5px 10px 0px;
+}
+
+/* GALLERY */
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li {
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    background-color: black;
+    display: block;
+}
+.meals-showcase img {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    transform: scale(1.2);
+    opacity: 0.5;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.meals-showcase img:hover {
+    opacity: 1;
+    transform: scale(1);
 }
