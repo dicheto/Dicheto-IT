@@ -132,3 +132,80 @@ div {
     height: 283px;
     width: 100%;
 }
+
+.text-section-5-6 {
+    text-align: start;
+}
+
+.btn-tag {
+    width: 100px;
+    height:33px; 
+    border: 2px solid #4c3663;
+    background-color: white;
+    color: #4c3663;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.btn-razgledai {
+    width: 107px;
+    height: 43px; 
+    border: 2px solid #4c3663;
+    background-color: #4c3663;
+    color: white;
+    font-size: 14px;
+    border-radius: 100px;
+}
+
+.text-section-5-6 ul li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+.text-section-5-6 ul li ion-icon {
+    width: 35px;
+    height: 20px;
+}
+
+.box-shadow-btn {
+    
+}
+
+.box-shadow-btn:hover {
+
+}
+.btn-gallery {
+    display: none;
+}
+.card:hover .btn-gallery {
+    transition: all 0.5s;
+    display: block;
+}
+.card {
+    transition: all 0.5s;
+}
+.card:hover {
+    
+    box-shadow: var(--bs-box-shadow) !important;
+    
+}
+footer li {
+    list-style: none;
+}
+footer *{
+    color: white;
+}
+footer ion-icons {
+    font-size: 24px;
+}
+footer li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contact-icons {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.padding-product-section {
+    padding-top: 10px;
+}
