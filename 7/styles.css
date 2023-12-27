@@ -1,3 +1,8 @@
+@media (max-width: 768px) {
+    header h1 {
+        padding-top: 200px;
+    }
+}
 .nav-bar-menu {
     float: left;
 }
@@ -317,4 +322,7 @@ input[type=checkbox] {
 .meals-showcase img:hover {
     opacity: 1;
     transform: scale(1);
+}
+.gallery-title {
+    font-size: 26px;
 }
