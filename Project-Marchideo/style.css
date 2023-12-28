@@ -213,3 +213,6 @@ footer li {
 .card {
     width: auto;
 }
+.row-fix {
+    margin-left: 0px;
+}

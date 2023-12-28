@@ -19,6 +19,22 @@
         width: 206px;
       }
     }
+    @media (max-width: 992px) {
+      .nav {
+        display: none;
+      }
+    }
+    @media (max-width: 768px) {
+      .dropdown-text {
+        display: none;
+      }
+    }
+    @media (max-width: 591px) {
+      header div {
+        align-items: start;
+        padding: 0px;
+      }
+    }
   </style>
 </head>
 
@@ -30,7 +46,7 @@
   <!--     
     <header id="div-header">
         <div>
-            <div style="height: 117px; width: 100%;" class="row nav-position justify-content-center">
+            <div style="height: 117px; width: 100%;" class="row row-fix nav-position justify-content-center">
                 <div class="col-3 justify-content-center">
                     <button type="button" class="btn btn-primary"><ion-icon style="color: white;" class="svg-icon-categories" name="albums-outline"></ion-icon>  Всички продукти</button>
                     <a class="button" href="http://"><img  class="svg-icon-categories" src="category-icon.png" alt=""><span class="padding-left-button">Всички продукти</span></a>
@@ -48,11 +64,11 @@
         </div> -->
   <header class="">
     <h1 class="d-none d-lg-block announcment w-100">ПРОМОЦИОНАЛЕН НОЕМВРИ! ОТСТЪПКИ ДО -30%. САМО ТУК И СЕГА</h1>
-    <div style="padding-left: 120px; padding-right: 120px; height: 112px;" class="row align-items-center w-100">
+    <div style="padding-left: 120px; padding-right: 120px; height: 112px;" class="row row-fix align-items-center w-100">
       <div class="col">
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <button type="button " class="btn btn-primary"><ion-icon style="color: white;" class="svg-icon-categories"
+            <button type="button " style="width: auto;" class="btn-razgledai btn-primary"><ion-icon style="color: white;" class="svg-icon-categories"
                 name="albums-outline"></ion-icon> Всички продукти</button>
           </li>
           <li class="nav-item">
@@ -64,7 +80,7 @@
         <img style="height: 90px; width: 192px;" src="161226629661660193b38966ef570-_3_.png" alt="">
       </div>
       <div class="col ">
-        <ul class="nav d-none d-lg-block justify-content-end gap-4">
+        <ul class="nav justify-content-end gap-4">
           <li class="nav-item">
             <form role="search" class="gap-1" style="border: none;">
               <input class="form-control" type="search" placeholder="Search" aria-label="Search">
@@ -78,8 +94,8 @@
           </li>
         </ul>
         <div class="dropdown d-none d-sm-block d-lg-none">
-          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
+          <a class="btn border dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="dropdown-text">Menu</span><span class="dropdown-icon"><ion-icon name="menu-outline"></ion-icon></span>
           </a>
         
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -93,23 +109,23 @@
   
   </header>
   <section>
-    <div style="padding-left: 120px; padding-right: 120px; height: 510px;"
-      class="row align-items-center text-center w-100 bg">
-      <div style="height: 510px;" class="row w-auto align-items-center text-center">
-        <span class=" text-center align-items-center l-button">Акумулаторни коли, джипове и <br> мотори</span>
+    <div style="padding-left: 120px; padding-right: 120px; height: auto;"
+      class="row row-fix align-items-center position-relative text-center w-100 bg">
+      <div style="height: 510px;" class="row row-fix position-relative align-items-center w-auto align-items-center text-center">
+        <span class=" text-center align-items-center h-auto w-auto pt-4 pb-4 l-button">Акумулаторни коли, джипове и <br> мотори</span>
       </div>
     </div>
 
   </section>
 
   <section>
-    <div style="height: 50px;" class="row w-100 text-center">
+    <div style="height: 50px;" class="row row-fix w-100 text-center">
       <span style="font-size: 25px; background-color: #2ebaa7; color: #711bcd; font-weight: 700;">Най-купувани
         продукти</span>
     </div>
 
     <div class="w-100 product-selection-bg">
-      <div class="row  gap-2  w-100">
+      <div class="row row-fix  gap-2  w-100">
         <div
           class="col l-selection padding-product-section text-center align-items-center product-selection text-center">
           <button type="button" class="btn btn-danger mb-3">-30%</button>
@@ -245,7 +261,7 @@
 
   <section class="container">
     <div class="w-100 justify-content-center">
-      <div style="" class="row gap-1 ps-5 w-100 py-5">
+      <div style="" class="row row-fix gap-1 ps-5 w-100 py-5">
         <div style="" class="col">
           <div style="position: relative;" class="card position-relative">
             <img style="width: 100%;"
@@ -305,7 +321,7 @@
   </section>
 
   <section class="container">
-    <div class="row w-100 mb-5">
+    <div class="row row-fix w-100 mb-5">
       <div style="" class="col">
         <img style="width: 601px; height:401px;"
           src="https://cdn.mydreamshop.io/resized/private/marchideo/pages/attachments/78125cddc9f09b2f4acd0529af94991bc4f96291/A/1623339731839460c232d3ce9d5828.jpg"
@@ -334,7 +350,7 @@
     </div>
   </section>
   <section class="container">
-    <div class="row w-100 mb-5">
+    <div class="row row-fix w-100 mb-5">
       <div class="col text-center">
 
         <button type="button" class="btn-tag mb-3 mt-4">Marchideo</button>
@@ -365,7 +381,7 @@
 
   <footer>
     <div style="height: 382px; background-color: #711bcd;" class="w-100">
-      <div class="row h-100 w-100 d-flex align-items-start justify-content-around">
+      <div class="row row-fix h-100 w-100 d-flex align-items-start justify-content-around">
         <div style="align-items: center;" class="col align-self-center text-center">
           
             <img style="width: 200px;" src="logo-white.png" alt="">
