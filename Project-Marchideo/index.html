@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
   <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
   <style>
     @media (max-width: 1400px) {
       .gallery-col {
         height: auto;
+        margin-bottom: 10px;
       }
     }
     @media (min-width: 768px) and (max-width: 992px) {
@@ -19,20 +21,28 @@
         width: 206px;
       }
     }
-    @media (max-width: 992px) {
+    /* @media (max-width: 992px) {
       .nav {
         display: none;
       }
-    }
-    @media (max-width: 768px) {
+    } */
+    /* @media (max-width: 768px) {
       .dropdown-text {
         display: none;
       }
-    }
+    } */
     @media (max-width: 591px) {
       header div {
         align-items: start;
         padding: 0px;
+      }
+    }
+    @media (max-width: 768px) {
+      .img-section4 {
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
+        width: calc(100%);
       }
     }
   </style>
@@ -65,21 +75,22 @@
   <header class="">
     <h1 class="d-none d-lg-block announcment w-100">ПРОМОЦИОНАЛЕН НОЕМВРИ! ОТСТЪПКИ ДО -30%. САМО ТУК И СЕГА</h1>
     <div style="padding-left: 120px; padding-right: 120px; height: 112px;" class="row row-fix align-items-center w-100">
-      <div class="col">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <button type="button " style="width: auto;" class="btn-razgledai btn-primary"><ion-icon style="color: white;" class="svg-icon-categories"
+      <div class="col d-none d-lg-block">
+        <ul class="nav  justify-content-center">
+          <li  class="nav-item">
+            <button type="button " style="" class="btn-razgledai w-100 btn-primary"><ion-icon style="color: white;" class="svg-icon-categories"
                 name="albums-outline"></ion-icon> Всички продукти</button>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Promocii</a>
           </li>
-        </ul>
+        </ul>        
+
       </div>
-      <div class="col text-center">
-        <img style="height: 90px; width: 192px;" src="161226629661660193b38966ef570-_3_.png" alt="">
+      <div class="col col-4 col-12 col-lg-4 text-center justify-content-center">
+        <img style="height: 90px; width: 192px;" class="align-self-center" src="161226629661660193b38966ef570-_3_.png" alt="">
       </div>
-      <div class="col ">
+      <div class="col d-none d-lg-block">
         <ul class="nav justify-content-end gap-4">
           <li class="nav-item">
             <form role="search" class="gap-1" style="border: none;">
@@ -92,9 +103,15 @@
           <li class="nav-item">
             <ion-icon class="icons-nav" name="accessibility-outline"></ion-icon>
           </li>
-        </ul>
-        <div class="dropdown d-none d-sm-block d-lg-none">
-          <a class="btn border dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        </ul>        
+      </div>
+    </div>
+    
+    
+    <div id="divider" class="row d-block d-lg-none w-100">
+      <div  class="col pb-1 pt-1">
+        <div class=" ps-4 d-block d-lg-none dropdown">
+          <a class="border btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="dropdown-text">Menu</span><span class="dropdown-icon"><ion-icon name="menu-outline"></ion-icon></span>
           </a>
         
@@ -104,9 +121,26 @@
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </div>        
+
       </div>
+      
+      <div class="col pt-2 d-block d-lg-none">
+        <ul class="nav  justify-content-end gap-4">
+          <li class="nav-item">
+            <form role="search" class="gap-1" style="border: none;">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </li>
+          <li class="nav-item">
+            <ion-icon class="nav-item icons-nav" name="cart-outline"></ion-icon>
+          </li>
+          <li class="nav-item">
+            <ion-icon class="icons-nav" name="accessibility-outline"></ion-icon>
+          </li>
+        </ul>        
+      </div>
+
     </div>
-  
   </header>
   <section>
     <div style="padding-left: 120px; padding-right: 120px; height: auto;"
@@ -124,15 +158,33 @@
         продукти</span>
     </div>
 
-    <div class="w-100 product-selection-bg">
+    <div class="w-100  product-selection-bg">
       <div class="row row-fix  gap-2  w-100">
         <div
-          class="col l-selection padding-product-section text-center align-items-center product-selection text-center">
+          class="col card card-products product-gal l-selection padding-product-section text-center position-relative align-items-center product-selection text-center">
           <button type="button" class="btn btn-danger mb-3">-30%</button>
           <br>
           <img class="selection-img text-center"
             src="https://cdn.mydreamshop.io/resized/private/marchideo/products/images/6325020c912de50dc960a4c835d0af60/B/16546250542901629f931e46dd5624.jpg"
             alt="">
+            <button class="btn-razgledai-products btn-razgledai btn-gallery">Разгледай</button>
+          
+
+          <h3 style="font-size: 16px;" class="mb-5 mt-2"> Акумулаторен мотор Shadow 6688</h3>
+
+          <button class="color-swatches red"> </button>
+          <button class="color-swatches black"> </button>
+
+          <h3 style="font-size: 20px;"> <br>744lv. </h3>
+        </div>
+        <div
+          class="col card card-products l-selection padding-product-section text-center align-items-center product-selection text-center d-none d-sm-block">
+          <button type="button" class="btn btn-danger mb-3">-30%</button>
+          <br>
+          <img class="selection-img text-center"
+            src="https://cdn.mydreamshop.io/resized/private/marchideo/products/images/6325020c912de50dc960a4c835d0af60/B/16546250542901629f931e46dd5624.jpg"
+            alt="">
+            <button class="btn-razgledai-products btn-razgledai btn-gallery">Разгледай</button>
           <h3 style="font-size: 16px;" class="mb-5 mt-2"> Акумулаторен мотор Shadow 6688</h3>
 
           <button class="color-swatches red"> </button>
@@ -142,12 +194,13 @@
 
         </div>
         <div
-          class="col l-selection padding-product-section text-center align-items-center product-selection text-center d-none d-sm-block">
+          class="col card card-products l-selection padding-product-section text-center align-items-center product-selection text-center d-none d-md-block">
           <button type="button" class="btn btn-danger mb-3">-30%</button>
           <br>
           <img class="selection-img text-center"
             src="https://cdn.mydreamshop.io/resized/private/marchideo/products/images/6325020c912de50dc960a4c835d0af60/B/16546250542901629f931e46dd5624.jpg"
             alt="">
+            <button class="btn-razgledai-products btn-razgledai btn-gallery">Разгледай</button>
           <h3 style="font-size: 16px;" class="mb-5 mt-2"> Акумулаторен мотор Shadow 6688</h3>
 
           <button class="color-swatches red"> </button>
@@ -157,12 +210,13 @@
 
         </div>
         <div
-          class="col l-selection padding-product-section text-center align-items-center product-selection text-center d-none d-md-block">
+          class="col card card-products l-selection padding-product-section text-center align-items-center product-selection text-center  d-none d-lg-block">
           <button type="button" class="btn btn-danger mb-3">-30%</button>
           <br>
           <img class="selection-img text-center"
             src="https://cdn.mydreamshop.io/resized/private/marchideo/products/images/6325020c912de50dc960a4c835d0af60/B/16546250542901629f931e46dd5624.jpg"
             alt="">
+            <button class="btn-razgledai-products btn-razgledai btn-gallery">Разгледай</button>
           <h3 style="font-size: 16px;" class="mb-5 mt-2"> Акумулаторен мотор Shadow 6688</h3>
 
           <button class="color-swatches red"> </button>
@@ -172,27 +226,13 @@
 
         </div>
         <div
-          class="col l-selection padding-product-section text-center align-items-center product-selection text-center  d-none d-lg-block">
-          <button type="button" class="btn btn-danger mb-3">-30%</button>
-          <br>
-          <img class="selection-img text-center"
-            src="https://cdn.mydreamshop.io/resized/private/marchideo/products/images/6325020c912de50dc960a4c835d0af60/B/16546250542901629f931e46dd5624.jpg"
-            alt="">
-          <h3 style="font-size: 16px;" class="mb-5 mt-2"> Акумулаторен мотор Shadow 6688</h3>
-
-          <button class="color-swatches red"> </button>
-          <button class="color-swatches black"> </button>
-
-          <h3 style="font-size: 20px;"> <br>744lv. </h3>
-
-        </div>
-        <div
-        class="col l-selection padding-product-section text-center align-items-center product-selection text-center d-none d-xl-block">
+        class="col card card-products l-selection padding-product-section text-center align-items-center product-selection text-center d-none d-xl-block">
         <button type="button" class="btn btn-danger mb-3">-30%</button>
         <br>
         <img class="selection-img text-center"
           src="https://cdn.mydreamshop.io/resized/private/marchideo/products/images/6325020c912de50dc960a4c835d0af60/B/16546250542901629f931e46dd5624.jpg"
           alt="">
+          <button class="btn-razgledai-products btn-razgledai btn-gallery">Разгледай</button>
         <h3 style="font-size: 16px;" class="mb-5 mt-2"> sfadsfds</h3>
 
         <button class="color-swatches red"> </button>
@@ -263,7 +303,7 @@
     <div class="w-100 justify-content-center">
       <div style="" class="row row-fix gap-1 ps-5 w-100 py-5">
         <div style="" class="col">
-          <div style="position: relative;" class="card position-relative">
+          <div style="" class="card ">
             <img style="width: 100%;"
               src="https://cdn.mydreamshop.io/resized/private/marchideo/pages/attachments/78125cddc9f09b2f4acd0529af94991bc4f96291/A/1623216938894560c0532ada687550.jpg"
               alt="">
@@ -323,11 +363,13 @@
   <section class="container">
     <div class="row row-fix w-100 mb-5">
       <div style="" class="col">
-        <img style="width: 601px; height:401px;"
+        <img style="width: 601px; height:401px;" class="img-section4"
           src="https://cdn.mydreamshop.io/resized/private/marchideo/pages/attachments/78125cddc9f09b2f4acd0529af94991bc4f96291/A/1623339731839460c232d3ce9d5828.jpg"
           alt="">
 
       </div>
+      
+      <hr class="clear d-block d-lg-none">
       <div class="col text-center">
 
         <button type="button" class="btn-tag mb-3 mt-4">Marchideo</button>
@@ -369,8 +411,9 @@
         <button class="btn-razgledai">Разгледай</button>
 
       </div>
-      <div style="" class="col">
-        <img style="width: 601px; height:401px;"
+      <hr class="clear d-block d-lg-none">
+      <div style="" class="col align-self-center">
+        <img style="width: 601px; height:401px;" class="img-section4"
           src="https://cdn.mydreamshop.io/resized/private/marchideo/pages/attachments/78125cddc9f09b2f4acd0529af94991bc4f96291/A/1690358062421264c0d12e66d8c255.jpg"
           alt="">
 
