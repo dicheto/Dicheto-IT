@@ -289,8 +289,8 @@ footer li {
 }
 
 .btn-razgledai-products {
-    top: 35%;
-    left: 30%;
+    top: 50%;
+    left: 35%;
     position: absolute;
 }
 
@@ -313,4 +313,17 @@ hr.clear {
 }
 a.nav-link {
     width: auto;
+}
+.Copyright {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    height: 45px;
+}
+div.Copyright p {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    
+    margin: 0;
 }

@@ -11,9 +11,9 @@
 
   <style>
     @media (max-width: 1400px) {
-      .gallery-col {
+      .gallery-col, .card-body {
         height: auto;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
       }
     }
     @media (min-width: 768px) and (max-width: 992px) {
@@ -44,6 +44,11 @@
         height: 100vh;
         width: calc(100%);
       }
+    }
+    @media (max-width: 992px) {
+      .card {
+        margin-bottom: 30px;
+      }  
     }
   </style>
 </head>
@@ -108,7 +113,7 @@
     </div>
     
     
-    <div id="divider" class="row d-block d-lg-none w-100">
+    <div id="divider" class="row d-lg-none w-100">
       <div  class="col pb-1 pt-1">
         <div class=" ps-4 d-block d-lg-none dropdown">
           <a class="border btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -159,9 +164,9 @@
     </div>
 
     <div class="w-100  product-selection-bg">
-      <div class="row row-fix  gap-2  w-100">
+      <div class="row row-fix pb-2 gap-2  w-100">
         <div
-          class="col card card-products product-gal l-selection padding-product-section text-center position-relative align-items-center product-selection text-center">
+          class="col ms-1 card card-products product-gal l-selection padding-product-section text-center position-relative align-items-center product-selection text-center">
           <button type="button" class="btn btn-danger mb-3">-30%</button>
           <br>
           <img class="selection-img text-center"
@@ -226,7 +231,7 @@
 
         </div>
         <div
-        class="col card card-products l-selection padding-product-section text-center align-items-center product-selection text-center d-none d-xl-block">
+        class="col me-1 card card-products l-selection padding-product-section text-center align-items-center product-selection text-center d-none d-xl-block">
         <button type="button" class="btn btn-danger mb-3">-30%</button>
         <br>
         <img class="selection-img text-center"
@@ -241,12 +246,6 @@
         <h3 style="font-size: 20px;"> <br>744lv. </h3>
 
         </div>
-
-        <section class="">
-          <div class="card">
-
-          </div>
-        </section>
         <!-- <div class="col l-selection text-center align-items-center product-selection">
             <img class="selection-img" src="https://cdn.mydreamshop.io/resized/private/marchideo/products/images/6325020c912de50dc960a4c835d0af60/B/16546250542901629f931e46dd5624.jpg" alt="">
             <h3 style="font-size: 16px;">Акумулаторен МОТОР Ninja Duo 12V </h3>
@@ -423,9 +422,9 @@
   </section>
 
   <footer>
-    <div style="height: 382px; background-color: #711bcd;" class="w-100">
-      <div class="row row-fix h-100 w-100 d-flex align-items-start justify-content-around">
-        <div style="align-items: center;" class="col align-self-center text-center">
+    <div style="background-color: #711bcd;" class="w-100">
+      <div class="row row-fix pt-2 pb-3  h-100 w-100 d-flex align-items-start justify-content-around">
+        <div style="align-items: center;" class="col-12 col-md-4 pt-3 align-self-center text-center">
           
             <img style="width: 200px;" src="logo-white.png" alt="">
           <br>
@@ -438,7 +437,7 @@
             
           
         </div>
-        <div style="align-items: center;" class="col text-center pt-5">
+        <div style="align-items: center;" class="col-12 col-md-4 text-center pt-5">
           <h3>Информация <br></h3>
           <ul>
             <li>За нас</li>
@@ -451,7 +450,7 @@
             <li>ЧЗВ Често задавани въпроси</li>
           </ul>
         </div>
-        <div style="align-items: center;" class="col text-center pt-5">
+        <div style="align-items: center;" class="col-12 col-md-4 text-center pt-5">
           <h3>Контакти</h3>
           <p><ion-icon name="call-outline"></ion-icon>088 555 9262</p>
           <p><ion-icon name="mail-outline"></ion-icon>info@marchideo.com</p>
@@ -459,8 +458,12 @@
           <p><ion-icon name="time-outline"></ion-icon>09:00-18:00</p>
         </div>
     </div>
-    
   </footer>
+  <section>
+    <div class="w-100 Copyright align-items-center d-flex">
+      <p id="Copyright-text align-center">&#169;2022 Всички права запазени. Създаден с <a href="dreamshop.io">Dream Shop</a></p>
+    </div>
+  </section>
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
