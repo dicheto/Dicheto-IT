@@ -15,6 +15,7 @@
     padding: 12px;
     font-size: 14.2px;
     align-items: center;
+    
 }
 
 .svg-icon-categories {
@@ -89,7 +90,7 @@ div {
 
 .bg {
     background-image: url("https://cdn.mydreamshop.io/source/private/marchideo/pages/attachments/78125cddc9f09b2f4acd0529af94991bc4f96291/1690297230888164bfe38ed8d37127.jpg");
-    /* background-size: contain; */
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -119,6 +120,14 @@ div {
 
 .black {
     background-color: black;
+}
+
+.green {
+    background-color: rgb(106, 168, 79);
+}
+
+.blue {
+    background-color: rgb(54, 70, 224);
 }
 
 .product-selection {
@@ -179,10 +188,6 @@ div {
     width: 35px;
     height: 20px;
 }
-
-.box-shadow-btn {}
-
-.box-shadow-btn:hover {}
 
 .btn-gallery {
     display: none;
@@ -268,7 +273,7 @@ footer li {
 #divider::before {
     display: block;
     height: 1px;
-    background-color: orange;
+    background-color: grey;
     width: 100%;
     margin: auto;
     content: " ";
@@ -301,6 +306,7 @@ footer li {
 a {
     color: #4c3663;
 }
+
 .img-section4 {
     max-width: 100%;
     height: auto;
@@ -311,19 +317,68 @@ hr.clear {
     border: 1px solid transparent;
     height: 0px;
 }
+
 a.nav-link {
     width: auto;
 }
+
 .Copyright {
     width: 100%;
     background-color: white;
     text-align: center;
     height: 45px;
 }
+
 div.Copyright p {
     width: 100%;
     text-align: center;
     background-color: white;
-    
+
     margin: 0;
+}
+
+
+.diagonal {
+    position: relative;
+    color: #666;
+    font-weight: 700;
+
+    &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 45%;
+        right: 0;
+        border-top: 1px solid;
+        border-color: inherit;
+        -webkit-transform: skewY(-10deg);
+        -moz-transform: skewY(-10deg);
+        transform: skewY(-10deg);
+    }
+}
+
+.sup-color {
+    color: #666;
+}
+
+.selection-img {
+    width: 200px;
+    height: 134px;
+    object-fit: cover;
+}
+
+sup {
+    font-size: smaller;
+}
+
+.text-color-discount,
+.sup-color-discount {
+    color: #6fa8dc;
+}
+div.categories-dropdown a:hover {
+    background-color: white !important;
+    color: #654884;
+}
+div.categories-dropdown a {
+    font-weight: 700;
 }
