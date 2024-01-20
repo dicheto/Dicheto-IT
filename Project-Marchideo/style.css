@@ -382,3 +382,53 @@ div.categories-dropdown a:hover {
 div.categories-dropdown a {
     font-weight: 700;
 }
+
+/* Сърч бар - Взет код */
+.form{
+
+    position: relative;
+    border: none;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: black;
+    border: none;
+    font-size: x-large;
+}
+
+.form span{
+
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border: none;
+
+}
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+   
+   padding-left: 10px;
+}
+
+.form-input{
+
+    height: auto;
+    text-indent: 33px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form-input:focus{
+
+    box-shadow: none;
+    border:none;
+}
