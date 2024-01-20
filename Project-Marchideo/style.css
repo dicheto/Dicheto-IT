@@ -86,11 +86,12 @@ div {
 .icons-nav {
     width: 24px;
     height: 24px;
+    font-weight: 100;
 }
 
 .bg {
     background-image: url("https://cdn.mydreamshop.io/source/private/marchideo/pages/attachments/78125cddc9f09b2f4acd0529af94991bc4f96291/1690297230888164bfe38ed8d37127.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -192,6 +193,9 @@ div {
 .btn-gallery {
     display: none;
 }
+.btn-gallery:hover {
+    transform: scale(1.1);
+}
 
 .card:hover .btn-gallery {
     transition: all 0.5s;
@@ -274,7 +278,7 @@ footer li {
     display: block;
     height: 1px;
     background-color: grey;
-    width: 100%;
+    width: 101%;
     margin: auto;
     content: " ";
 }
@@ -294,13 +298,37 @@ footer li {
 }
 
 .btn-razgledai-products {
-    top: 50%;
-    left: 35%;
+    top: 61%;
+    left: 20%;
     position: absolute;
+    border: 2px solid rgb(111, 25, 203);
+    background-color: rgb(111, 25, 203);
+    color: white;
+    font-size: 14px;
+    border-radius: 100px;
+    
+}
+.btn-razgledai-products-2 {
+    top: 61%;
+    left: 55%;
+    font-size: 40px;
+    
+    position: absolute;
+    border: 2px solid rgb(111, 25, 203);
+    background-color: rgb(111, 25, 203);
+    color: white;
+    font-size: 14px;
+    border-radius: 100px;
+}
+.btn-razg-buttons {
+    font-size: 24px;
+    color: white;
+    padding: 4px 7px;
 }
 
-.btn-razgledai:hover {
-    background-color: rgb(81, 18, 149);
+.btn-razgledai:hover, .btn-razgledai-products:hover, .btn-razgledai-products-2:hover {
+    background-color: rgb(81, 18, 149) !important;
+    color: white !important;
 }
 
 a {
@@ -432,3 +460,67 @@ div.categories-dropdown a {
     box-shadow: none;
     border:none;
 }
+footer ul {
+    padding-left: 0px;
+}
+ul.contacts li a, ul.Information li a {
+    color: white;
+    text-decoration: none;
+}
+.cart-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+.acc-dropdown {
+    box-shadow: inset;
+
+}
+ul.acc-dropdown li a ion-icon {
+    width: 24px;
+    height: 24px;
+}
+.btn-login {
+    width:max-content !important;
+    height: auto !important;
+    margin: 15px;
+    margin-left: 25px;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+ul.acc-dropdown li a.dropdown-item:hover {
+    background-color: white;
+    color: #4c3663;
+}
+/* АНИМАЦИЯ НА DROPDOWN-ите */
+@keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(3.5rem);
+      opacity: 1;
+    }
+  
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+  .slideIn {
+    animation-name: slideIn;
+  }
+  .animate {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+  }
+
+/*                     */
+/*                     */
+/* ПРОДУКТОВА СТРАНИЦА */
+/*                     */
+/*                     */
+
