@@ -518,9 +518,57 @@ ul.acc-dropdown li a.dropdown-item:hover {
     animation-fill-mode: both;
   }
 
+  .modal {
+    
+    
+  }
+  
+  .modal-content {
+    left: 100%;
+  }
+div.modal h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+div.modal p {
+    font-size: 15px !important;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+div.modal a {
+    font-weight: 400;
+    padding: 3px;
+    
+}
+div.modal p {
+    margin-bottom: 0px;
+}
+.form-control {
+    margin-bottom: 10px;
+}
+.profile-facebook {
+    color: #3c5a96;
+}
+.profile-google {
+    color: #dc4c3f;
+}
+ion-icon {
+    width: 24px;
+    height: 24px;
+}
+.modal-fix-cart {
+    left: 50% !important;
+}
+
+/* div.cart-contacts input {
+    width: 245px;
+} */
 /*                     */
 /*                     */
 /* ПРОДУКТОВА СТРАНИЦА */
 /*                     */
 /*                     */
+
 
