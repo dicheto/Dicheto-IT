@@ -71,14 +71,6 @@
     margin: 15px;
 }
 
-div {
-    float: left;
-}
-
-* {
-    color: black;
-}
-
 .column-navbar {
     width: 162px;
 }
@@ -298,32 +290,32 @@ footer li {
 }
 
 .btn-razgledai-products {
-    top: 61%;
-    left: 20%;
+    top: 41%;
+    left: 35%;
     position: absolute;
     border: 2px solid rgb(111, 25, 203);
     background-color: rgb(111, 25, 203);
     color: white;
-    font-size: 14px;
+    font-size: 20px;
     border-radius: 100px;
     
 }
 .btn-razgledai-products-2 {
-    top: 61%;
-    left: 55%;
-    font-size: 40px;
+    top: 41%;
+    left: 50%;
+    font-size: 80px;
     
     position: absolute;
     border: 2px solid rgb(111, 25, 203);
     background-color: rgb(111, 25, 203);
     color: white;
-    font-size: 14px;
+    font-size: 20px;
     border-radius: 100px;
 }
 .btn-razg-buttons {
     font-size: 24px;
     color: white;
-    padding: 4px 7px;
+    padding: 2px 6px;
 }
 
 .btn-razgledai:hover, .btn-razgledai-products:hover, .btn-razgledai-products-2:hover {
@@ -517,15 +509,6 @@ ul.acc-dropdown li a.dropdown-item:hover {
     animation-duration: 0.3s;
     animation-fill-mode: both;
   }
-
-  .modal {
-    
-    
-  }
-  
-  .modal-content {
-    left: 100%;
-  }
 div.modal h3 {
     font-size: 18px;
     font-weight: 700;
@@ -558,10 +541,24 @@ ion-icon {
     width: 24px;
     height: 24px;
 }
+
+
 .modal-fix-cart {
-    left: 50% !important;
+    width: 1100px;
+    transform: translateX(-30%);
 }
 
+/* Трябваше да направя този фикс заради промяната на ширината на екрана в менюто МОЯТ ПРОФИЛ.  */
+.modal-dialog-centered-fix {
+    align-items: center;
+    min-height: calc(100% - var(--bs-modal-margin) * 2);
+
+}
+
+.modal-MyProfile-fix {
+    width: 120%;
+    transform: translateX(-9.385%);
+}
 /* div.cart-contacts input {
     width: 245px;
 } */
@@ -572,3 +569,87 @@ ion-icon {
 /*                     */
 
 
+div#Cart input[type = text], div#Cart input[type = number] {
+    border-radius: 10px;
+    height: 50px;
+}
+.form-check-cart {
+    border-radius: 100000000000%;
+}
+label p {
+    font-size: 14px;
+}
+.border-cart-buttons {
+    border: 1px solid #cbbeda;
+    border-radius: 10px;
+}
+.form-check-input {
+    width: 20px !important;
+    height: 20px !important;
+}
+div#Payment-form a {
+    padding: 9px 16px;
+    border: 2px solid #cbbeda;
+    border-radius: 10px;
+    font-size: 15px;
+}
+hr.solid {
+    margin: 0px;
+    border: 1px solid #cbbeda;
+  }
+
+.green-button {
+    border: 2px solid #9c3 !important;
+}
+input.AddProduct-Cart::placeholder {
+    font-size: 15px;
+    display: flex;
+    vertical-align: middle;
+    align-self: center;
+}
+input.AddProduct-Cart {
+    height: 50px;
+}
+/* .AddProduct-Cart {
+    border: none;
+} */
+
+.Dostavka-Cart {
+    font-size: 15px;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    line-height: 1.5;
+    float: right;
+    color: #4c3663;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.Obshto-Cart {
+    color: black;
+    line-height: 1.5;
+    font-size: 23px;
+    font-weight: 700;
+    padding: 12px;
+    border-top: 1px solid #cbbeda;
+}
+div.free-delivery-alert {
+    color: #6b39a0 !important;
+    border-radius: 10px;
+    border: 1px solid #6b39a0 !important;
+}
+div.free-delivery-alert span ion-icon {
+    color: #6b39a0 !important;
+}
+
+.harakteristiki-products {
+
+}
+.Kod-marka-products {
+    font-size: 12px;
+}
+.color-swatches-product-page {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
