@@ -312,6 +312,14 @@ footer li {
     font-size: 20px;
     border-radius: 100px;
 }
+.btn-login-socials {
+    border: 2px solid rgb(111, 25, 203);
+    background-color: rgb(111, 25, 203);
+    color: white;
+    font-size: 20px;
+    border-radius: 100px;
+
+}
 .btn-razg-buttons {
     font-size: 24px;
     color: white;
@@ -598,7 +606,7 @@ hr.solid {
     border: 1px solid #cbbeda;
   }
 
-.green-button {
+.green-button, .active-btn-cart {
     border: 2px solid #9c3 !important;
 }
 input.AddProduct-Cart::placeholder {
@@ -642,14 +650,76 @@ div.free-delivery-alert span ion-icon {
 }
 
 .harakteristiki-products {
-
+    border-radius: 10px;
+    border: 1px solid #cbbeda;
 }
 .Kod-marka-products {
     font-size: 12px;
+    
 }
 .color-swatches-product-page {
     width: 50px;
     height: 50px;
     border: none;
     border-radius: 10px;
+}
+
+.Product-Tax-Notice {
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+    color: #000;
+    font-size: 12px;
+}
+div.products-btn span {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+div.Otzivi h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.comment-add-btn {
+    padding: 8.40px 12px;
+    background-color: #6f19cb;
+    width: 260px;
+}
+textarea:hover, textarea:active, form>input:active, form input:hover {
+    border: 1px solid blue;
+}
+div.Dropdown-review {
+    border-radius: 10px;
+    border: 1px solid #cbbeda;
+}
+#Write-a-comment {
+    width: 95%;
+}
+div.review-stars {
+    color: #4c3663;
+}
+#search-icon {
+    width: 24px;
+    height: 24px;
+    font-weight: 300; 
+}
+
+.pop-up-header {
+    font-size: calc(12px + (6 * 0.3vmin));
+    font-weight: 700;
+}
+
+.border-radius-Delivery {
+    border-radius: 10px;
+}
+div.agreements {
+    color: black;
+}
+div.agreements a {
+    text-decoration: underline;
+}
+div#Login a {
+    text-decoration: underline;
+    color: #000;
+}
+.login-width-fix {
+    width: 90%;
 }
