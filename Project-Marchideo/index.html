@@ -222,7 +222,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content modal-fix-cart">
                     <div class="modal-header">
-                      <h5 class="modal-title w-100 text-center pop-up-header" id="Cart">Моят профил</h5>
+                      <h5 class="modal-title w-100 text-center pop-up-header" id="Cart"></h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -233,51 +233,54 @@
                               style="font-size: 16px; font-weight: 700; height: 52px; width: 531px;"
                               data-bs-toggle="collapse"><span class="me-auto ms-2">Лични данни</span> <ion-icon
                                 class="me-2" name="chevron-down-outline"></ion-icon></a>
-                            <form class="input-MyProfile needs-validation was-validated collapse" id="LichniDanni-form"
-                              novalidate="">
-                              <hr class="solid">
-                              <div class="d-flex">
-                                <input type="text" class="form-control w-50 m-2" id="MyProfile-Validation01"
-                                  placeholder="Име" value="Иван" required>
+                                
+                            <div id="LichniDanni-form" class="collapse">
+                              <form class="input-MyProfile needs-validation was-validated collapse" 
+                                novalidate="">
+                                <hr class="solid">
+                                <div class="d-flex">
+                                  <input type="text" class="form-control w-50 m-2" id="MyProfile-Validation011"
+                                    placeholder="Име" value="Иван" required>
 
-                                <input type="text" class="form-control w-50 m-2" id="MyProfile-Validation02"
-                                  placeholder="Фамилия" value="Иванов" required>
-                              </div>
+                                  <input type="text" class="form-control w-50 m-2" id="MyProfile-Validation012"
+                                    placeholder="Фамилия" value="Иванов" required>
+                                </div>
 
-                              <div class="d-flex">
-                                <input type="number" class="form-control w-50 m-2" id="MyProfile-Validation03"
-                                  placeholder="Телефон" required>
+                                <div class="d-flex">
+                                  <input type="number" class="form-control w-50 m-2" id="MyProfile-Validation031"
+                                    placeholder="Телефон" required>
 
-                                <input type="text" class="form-control w-50 m-2" id="MyProfile-Validation04"
-                                  placeholder="Имейл" value="Ivan.Ivanov@icloud.com" required>
-
-
-                              </div>
-                              <div class="ps-3 agreements">
-                                <input type="checkbox" class="form-check-input" id="terms-of-use-agreement" required>
-                                <label class="form-check-label" for="terms-of-use-agreement">
-                                  <p>Съгласен съм с <a href="">Условия за ползване.</a></p>
-                                </label>
-                                <br>
-                                <input type="checkbox" class="form-check-input" id="Privacy-policy-agreement" required>
-                                <label class="form-check-label" for="Privacy-policy-agreement">
-                                  <p>Съгласен съм с <a href="">Политика за поверителност</a></p>
-                                </label>
-                              </div>
-                              <div class="d-flex justify-content-center">
-                                <a href="#Delivery-form" class="btn-razgledai w-50 h-auto m-2 text-center"
-                                  data-bs-toggle="collapse">Продължи</a>
-                              </div>
+                                  <input type="text" class="form-control w-50 m-2" id="MyProfile-Validation014"
+                                    placeholder="Имейл" value="Ivan.Ivanov@icloud.com" required>
 
 
-                            </form>
+                                </div>
+                                <div class="ps-3 agreements">
+                                  <input type="checkbox" class="form-check-input" id="terms-of-use-agreement" required>
+                                  <label class="form-check-label" for="terms-of-use-agreement">
+                                    <p>Съгласен съм с <a href="">Условия за ползване.</a></p>
+                                  </label>
+                                  <br>
+                                  <input type="checkbox" class="form-check-input" id="Privacy-policy-agreement" required>
+                                  <label class="form-check-label" for="Privacy-policy-agreement">
+                                    <p>Съгласен съм с <a href="">Политика за поверителност</a></p>
+                                  </label>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                  <a href="#Delivery-form" class="btn-razgledai w-50 h-auto m-2 text-center"
+                                    data-bs-toggle="collapse">Продължи</a>
+                                </div>
+
+
+                              </form>
+                            </div>
                           </div>
                           <div class="border-cart-buttons mb-3">
                             <a href="#Delivery-form" class="w-100 d-flex align-items-center"
                               style="font-size: 16px; font-weight: 700; height: 52px; width: 531px;"
-                              data-bs-toggle="collapse"><span class="me-auto ms-2">Данни за доставка</span> <ion-icon
+                              data-bs-toggle="collapse"><span class="me-auto ms-2" aria-expanded="false">Данни за доставка</span> <ion-icon
                                 class="me-2" name="chevron-down-outline"></ion-icon></a>
-                            <form class="input-MyProfile needs-validation was-validated collapse" id="Delivery-form"
+                            <form class="input-MyProfile needs-validation was-validated collapse" aria-expanded="false" id="Delivery-form"
                               novalidate="">
                               <hr class="solid">
                               <div class="d-flex">

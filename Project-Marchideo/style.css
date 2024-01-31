@@ -683,7 +683,7 @@ div.Otzivi h2 {
     background-color: #6f19cb;
     width: 260px;
 }
-textarea:hover, textarea:active, form>input:active, form input:hover {
+textarea:hover {
     border: 1px solid blue;
 }
 div.Dropdown-review {
