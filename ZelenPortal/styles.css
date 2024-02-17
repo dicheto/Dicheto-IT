@@ -101,13 +101,14 @@ a.Nauchi:hover {
     color: white;
     background-color: #70A843;
 }
-#Koi-sme-nie {
+.Koi-sme-nie {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 700;
     font-size: 36px;
     line-height: 53px;
     color: #123d27;
+    text-align: center;
 }
 .section-heading {
     font-size: 36px;
@@ -181,4 +182,132 @@ div.blog-categories-btn a:hover {
 }
 .small-article-heading {
     font-size: 22px !important;
+}
+
+
+
+/* ЗА НАС */
+.picture{
+    width: fit-content;
+    height: 100%;
+    object-fit: cover;
+}
+.picture1{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+tr{
+    width: 100%;
+}
+td{
+    width: 50%;
+}
+div.about-us-text p{
+    font-weight: 300;
+    color: rgb(150, 150, 150) !important;
+    font-size: 16 px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    height: auto;
+    text-align: left;
+}
+
+.ulli li{
+    
+    font-size: 16px;
+    color: rgb(150, 150, 150) !important;
+    font-family: 'Montserrat', sans-serif;
+}
+.about-us {
+    display: flex;
+    flex-direction: row;
+}
+.about-us-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.za-nas-text-header {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #123d27;
+}
+.about-us-image {
+    width: 50%;
+    height: auto;
+}
+.about-us-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-us-text {
+    width: 50%;
+    height: 100%;
+    padding: 0px 10%;
+}
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+    }
+    .about-us-image {
+        width: 100%;
+        height: auto;
+    }
+    .about-us-text {
+        width: 100%;
+        height: auto;
+    }
+
+}
+.zanas-green {
+    color: #6fa843;
+}
+section.proizvoditeli-header {
+    margin: 1.2em 0;
+    font-family: 'Montserrat';
+    
+    font-size: 48px;
+    
+    color: #3c3950;
+}
+section.proizvoditeli-header p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 25px;
+    color: #5f727f;
+    box-sizing: border-box;
+    margin: 1.5% 2%;
+    text-align: center;
+}
+section.proizvoditeli-header p strong {
+    font-size: 16px;
+    
+    color: #5f727f;
+}
+.proizvoditeli-bg-image {
+    
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s;
+    object-fit: cover;
+    
+}
+.proizvoditeli-bg-image:hover {
+    opacity: 0.5;
+    transform: scale(1);
+    background-color: #62d00d;
+}
+.proizvoditeli-link {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6fa843;
+    text-transform: uppercase;
 }
