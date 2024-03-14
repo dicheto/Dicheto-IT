@@ -311,3 +311,58 @@ section.proizvoditeli-header p strong {
     color: #6fa843;
     text-transform: uppercase;
 }
+.page-title {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    
+    
+    padding: 50px 0px;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    color: #123d27;
+}
+.contact-input, .contact-input:focus {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: none;
+}
+.contacts-bg-tel {
+    background-color: #93E7B4;
+    color: white;
+}
+.contacts-bg-mail {
+    background-color: #6FA843;
+    color: white;
+}
+.contacts-bg-tel:hover, .contacts-bg-mail:hover {
+    background-color: #B6C6C9;
+}
+.contacts-button-text {
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-weight: normal;
+}
+.contacts-icons {
+    font-size: 48px;
+}
+div#contacts-buttons a {
+    color: white;
+}
+.contacts-btn-send {
+    border-radius: 3px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 15px 15px 15px 0;
+    height: 50px;
+    line-height: 30px;
+    padding: 10px 40px;
+    font-size: 20px;
+    border: 1px solid #394050;
+    width: 100%;
+    background-color: #70a843;
+}
