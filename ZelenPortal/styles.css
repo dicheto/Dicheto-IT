@@ -366,3 +366,103 @@ div#contacts-buttons a {
     width: 100%;
     background-color: #70a843;
 }
+.blog_aside-article-heading {
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: #5f727f;
+    
+}
+img.blog_aside-article-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.blog_aside-height-fix {
+    height: 125px;
+}
+.blog_aside-heading {
+    text-transform: uppercase;
+    margin: 1em 0;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 30px;
+    color: #3c3950;
+}
+.blog-page-links a{
+    padding: 10px;
+    border: 2px solid #99a9b5;
+    background-color: white;
+    color: #99a9b5;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 0 8px 16px 8px;
+}
+.blog-page-links a:hover{
+    background-color: rgb(119, 119, 218);
+    border-color: rgb(119, 119, 218);
+    color: white;
+    transition: 0.2s;
+}
+.arrow img{
+    width: 20px;
+    height: 20px;
+}
+.arrow{
+    padding: 10px;
+    border: 2px solid #99a9b5;
+    background-color: rgb(212, 212, 212);
+    color: #99a9b5;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 0 8px 16px 8px;
+}
+
+.blog_newsletter {
+    background-color: #6FA843;
+}
+div.blog_newsletter p {
+    font-size: 16px;
+    line-height: 25px;
+    box-sizing: border-box;
+    margin: 0 0 1.1em;
+    margin-bottom: 0px;
+    color: #123D27;
+    text-align: center;
+    font-weight: bold;
+}
+.subscribe-form a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3;
+}
+.subscribe-form a:hover {
+    color: black;
+    text-decoration: none;
+}
+.subscribe-form input[type="submit"] {
+    color: white;
+    background-color: #123D27;
+    padding: 10px;
+    border: 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+}
+.blog_article_heading {
+
+}
+.maslinki img {
+    width: 100%;
+}
