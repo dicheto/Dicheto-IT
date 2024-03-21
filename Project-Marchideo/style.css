@@ -582,9 +582,9 @@ ion-icon {
 
 
 .modal-fix-cart {
-    width: 1100px;
-    transform: translateX(-30%);
+    width: 100%;
 }
+
 
 /* Трябваше да направя този фикс заради промяната на ширината на екрана в менюто МОЯТ ПРОФИЛ.  */
 .modal-dialog-centered-fix {
@@ -974,4 +974,41 @@ ul.categories_sidebar_filter_manufacturers-list li input {}
     padding-left: 120px;
     padding-right: 120px; */
     height: 112px;
+}
+img.selection-img {
+    max-width: 100%;
+}
+.product_cart-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.product_cart-productName {
+    font-size: 14px;
+    line-height: 1.5;
+    border-bottom: 1px solid #654884;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    text-decoration: none !important;
+    font-weight: 700;
+}
+.cart_btn-quantity {
+    border-radius: 30px 0 0 30px;
+    background-color: #6f19cb;
+}
+.cart_btn-quantity-2 {
+    border-radius: 0 30px 30px 0;
+    background-color: #6f19cb;
+}
+.height-fix_quantity {
+    height: 48px !important;
+}
+.cart_label-products {
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    font-size: calc(12px + (1 * 0.3vmin)) !important;
+}
+div.cart_product-locator span, div.cart_product-locator h3, div.cart_product-locator sup {
+    color: #000;
 }
