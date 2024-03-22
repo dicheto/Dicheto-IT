@@ -177,10 +177,34 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" data-bs-toggle="modal" class="me-1" data-bs-target="#Cart"><ion-icon
+                                    <a href="" data-bs-toggle="modal" class="me-2" data-bs-target="#Cart"><ion-icon
                                             class="nav-item icons-nav" name="cart-outline"></ion-icon></a>
-                                    <a href="#" role="button" class="ms-2" data-bs-toggle="dropdown">
-                                        <ion-icon class="cart-icon" name="accessibility-outline"></ion-icon>
+
+                                    <a href="" data-bs-toggle="dropdown" class="me-4"><ion-icon
+                                            class="nav-item icons-nav" name="accessibility-outline"></ion-icon></a>
+
+                                    <ul class="mt-6 dropdown-menu animate slideIn acc-dropdown">
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#MyProfile"><ion-icon
+                                                    name="accessibility-outline"></ion-icon> Моят профил</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"><ion-icon name="cart-outline"></ion-icon>
+                                                Поръчки</a></li>
+                                        <li><a class="dropdown-item" href="#"><ion-icon
+                                                    name="location-outline"></ion-icon> Адреси за
+                                                Доставка</a></li>
+                                        <li><a class="dropdown-item" href="#"><ion-icon
+                                                    name="lock-closed-outline"></ion-icon> Смяна на
+                                                паролата</a></li>
+                                        <li><a class="dropdown-item" href="#"><ion-icon name="heart-outline"></ion-icon>
+                                                Любими продукти</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"><ion-icon name="mail-outline"></ion-icon>
+                                                Моите коментари</a></li>
+                                        <li><a class="dropdown-item btn-razgledai btn-login" data-bs-toggle="modal"
+                                                data-bs-target="#Login" href="#">Вход / Регистрация</a>
+                                        </li>
+                                    </ul>
 
                                 </li>
                                 <li class="nav-item">
@@ -617,83 +641,63 @@
                                                                                 
 
                                                                             </div> -->
-                                                                            <div class="col">
-                                                                                <div class="w-100 h-50 d-flex align-items-end">
-                                                                                    <p style="clear: both;" class=" w-100 cart_label-products">Общо</p>
-                                                                                    
-                                                                                    
-                                                                                </div>
-                                                                                <div class="d-flex w-50 align-items-end pb-3  h-50" style="clear: both;">
-                                                                                    <h3 class=" cart_label-" ><span
-                                                                                    class="h-auto text-color-discount">396<sup class="sup-color-discount">01</sup>лв.
-                                                                                    
-                                                                                </div>
+                                                                    <div class="col">
+                                                                        <div class="w-100 h-50 d-flex align-items-end">
+                                                                            <p style="clear: both;"
+                                                                                class=" w-100 cart_label-products">Общо
+                                                                            </p>
+
+
                                                                         </div>
-                                                                    </div>
-                                                            
-                                                                    <div class=" mt-3 border border-radius-Delivery">
-                                                                        <div>
-                                                                            <p class="pt-3 px-3">Доставка</p>
-                                                                            <span
-                                                                                class="Dostavka-Cart pb-2 px-3">БЕЗПЛАТНА
-                                                                                ДОСТАВКА НАД 150 ЛВ ДО ОФИС НА
-                                                                                ЕКОНТ(САМО ЗА НЕПРОМОЦИОНАЛНИ ПРОДУКТИ -
-                                                                                ЗА ПРОМОЦИОНАЛНИ ДОСТАВКА 10-20
-                                                                                ЛВ.)!</span>
-                                                                        </div>
-                                                                        <hr class="solid">
-                                                                        <div class="d-flex Obshto-Cart">
-                                                                            <span class="me-auto">Общо</span>
-                                                                            <span
-                                                                                class="text-end">0<sup>00</sup>лв.</span>
+                                                                        <div class="d-flex w-50 align-items-end pb-3  h-50"
+                                                                            style="clear: both;">
+                                                                            <h3 class=" cart_label-"><span
+                                                                                    class="h-auto text-color-discount">396<sup
+                                                                                        class="sup-color-discount">01</sup>лв.
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
 
+                                                                <div class=" mt-3 border border-radius-Delivery">
+                                                                    <div>
+                                                                        <p class="pt-3 px-3">Доставка</p>
+                                                                        <span class="Dostavka-Cart pb-2 px-3">БЕЗПЛАТНА
+                                                                            ДОСТАВКА НАД 150 ЛВ ДО ОФИС НА
+                                                                            ЕКОНТ(САМО ЗА НЕПРОМОЦИОНАЛНИ ПРОДУКТИ -
+                                                                            ЗА ПРОМОЦИОНАЛНИ ДОСТАВКА 10-20
+                                                                            ЛВ.)!</span>
+                                                                    </div>
+                                                                    <hr class="solid">
+                                                                    <div class="d-flex Obshto-Cart">
+                                                                        <span class="me-auto">Общо</span>
+                                                                        <span class="text-end">0<sup>00</sup>лв.</span>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                        </div>
 
+                                                        </div>
                                                     </div>
-                                                    <div class="modal-footer justify-content-center">
-                                                        <button type="button" class="btn-razgledai text-center"
-                                                            data-bs-dismiss="modal">Запази</button>
-                                                    </div>
+
+                                                </div>
+                                                <div class="modal-footer justify-content-center">
+                                                    <button type="button" class="btn-razgledai text-center"
+                                                        data-bs-dismiss="modal">Запази</button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <ul class="dropdown-menu animate slideIn acc-dropdown">
-                                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#MyProfile"><ion-icon
-                                                        name="accessibility-outline"></ion-icon> Моят профил</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="#"><ion-icon
-                                                        name="cart-outline"></ion-icon> Поръчки</a></li>
-                                            <li><a class="dropdown-item" href="#"><ion-icon
-                                                        name="location-outline"></ion-icon> Адреси за
-                                                    Доставка</a></li>
-                                            <li><a class="dropdown-item" href="#"><ion-icon
-                                                        name="lock-closed-outline"></ion-icon> Смяна на
-                                                    паролата</a></li>
-                                            <li><a class="dropdown-item" href="#"><ion-icon
-                                                        name="heart-outline"></ion-icon> Любими продукти</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="#"><ion-icon
-                                                        name="mail-outline"></ion-icon> Моите коментари</a></li>
-                                            <li><a class="dropdown-item btn-razgledai btn-login" data-bs-toggle="modal"
-                                                    data-bs-target="#Login" href="#">Вход / Регистрация</a>
-                                            </li>
-                                        </ul>
                                     </div>
 
-                                </li>
-                            </ul>
                         </div>
 
-
+                        </li>
+                        </ul>
                     </div>
-                </header>
 
-            
+
+            </div>
+
+
             <hr class="solid">
             <div class="row d-lg-none w-100">
 
@@ -746,17 +750,19 @@
 
                         </li>
                         <!-- <li class="nav-item h-100 d-flex align-items-center">
-                            <div class="dropdown nav-item icons-nav cart-icon">
-                              
-                            </div>
-                          </li> -->
+                                    <div class="dropdown nav-item icons-nav cart-icon">
+                                    
+                                    </div>
+                                </li> -->
                     </ul>
                 </div>
             </div>
             </header>
             <section class="page-category-navigator">
                 <div class="container">
-                    <p class="w-100 pt-2 text-center">Къща > Категория > Категория</p>
+                    <p class="w-100 pt-2 text-center d-flex align-items-center justify-content-center breadcrumbs ">
+                        <ion-icon name="home-outline" class="me-1"></ion-icon> > Акумулаторни коли, джипове, мотори,
+                        бъгита</p>
                     <h1 class="w-100 pt-4 text-center categories_category-name">Акумулаторни коли</h1>
                     <p class="w-100 pb-5 text-center categories_category-name_description">Всички Акумулаторни Коли са с
                         гаранция. Предлагаме също и сервиз за Акумулаторни Коли. Бърза Доставка. Консултации по телефон
@@ -3126,143 +3132,145 @@
 
             </div>
         </main>
-        
+
         <footer data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <div style="background-color: #654884;" class="w-100">
-              <div class="row row-fix pt-2 pb-3  h-100 w-100 d-flex align-items-start justify-content-around">
-                <div style="align-items: center;" class="col-12 col-md-4 pt-3 align-self-center text-center">
-        
-                  <img style="width: 200px;" src="/Project-Marchideo/logo-white.png" alt="">
-                  <br>
-        
-                  <span>
-                    <ion-icon class="contact-icons" name="logo-facebook"></ion-icon>
-                    <ion-icon class="contact-icons" name="logo-whatsapp"></ion-icon>
-                    <ion-icon class="contact-icons" name="call-outline"></ion-icon>
-                  </span>
-        
-        
+                <div class="row row-fix pt-2 pb-3  h-100 w-100 d-flex align-items-start justify-content-around">
+                    <div style="align-items: center;" class="col-12 col-md-4 pt-3 align-self-center text-center">
+
+                        <img style="width: 200px;" src="/Project-Marchideo/logo-white.png" alt="">
+                        <br>
+
+                        <span>
+                            <ion-icon class="contact-icons" name="logo-facebook"></ion-icon>
+                            <ion-icon class="contact-icons" name="logo-whatsapp"></ion-icon>
+                            <ion-icon class="contact-icons" name="call-outline"></ion-icon>
+                        </span>
+
+
+                    </div>
+                    <div style="align-items: center;" class="col-12 col-md-4 text-center pt-5">
+                        <h3>Информация <br></h3>
+                        <ul class="Information">
+                            <li><a href="">За нас</a></li>
+                            <li><a href="">Общи условия</a></li>
+                            <li><a href="">Доставка и начини на плащне</a></li>
+                            <li><a href="">Политика за поверителност</a></li>
+                            <li><a href="">Връщане/Замяна на продукт</a></li>
+                            <li><a href="">Политика за бисквитки</a></li>
+                            <li><a href="">Блог</a></li>
+                            <li><a href="">ЧЗВ Често задавани въпроси</a></li>
+                        </ul>
+                    </div>
+                    <div style="align-items: center;" class="col-12 col-md-4 text-center pt-5">
+                        <h3>Контакти</h3>
+                        <ul class="contacts">
+                            <li><a href=""><ion-icon name="call-outline" class="me-1"></ion-icon>088 555 9262</a></li>
+                            <li><a href=""><ion-icon name="mail-outline" class="me-1"></ion-icon>info@marchideo.com</a>
+                            </li>
+                            <li><a href="">shop@marchideo.com</a></li>
+                            <li><a href=""><ion-icon name="time-outline" class="me-1"></ion-icon>09:00-18:00</a></li>
+                        </ul>
+
+                    </div>
                 </div>
-                <div style="align-items: center;" class="col-12 col-md-4 text-center pt-5">
-                  <h3>Информация <br></h3>
-                  <ul class="Information">
-                    <li><a href="">За нас</a></li>
-                    <li><a href="">Общи условия</a></li>
-                    <li><a href="">Доставка и начини на плащне</a></li>
-                    <li><a href="">Политика за поверителност</a></li>
-                    <li><a href="">Връщане/Замяна на продукт</a></li>
-                    <li><a href="">Политика за бисквитки</a></li>
-                    <li><a href="">Блог</a></li>
-                    <li><a href="">ЧЗВ Често задавани въпроси</a></li>
-                  </ul>
-                </div>
-                <div style="align-items: center;" class="col-12 col-md-4 text-center pt-5">
-                  <h3>Контакти</h3>
-                  <ul class="contacts">
-                    <li><a href=""><ion-icon name="call-outline" class="me-1"></ion-icon>088 555 9262</a></li>
-                    <li><a href=""><ion-icon name="mail-outline" class="me-1"></ion-icon>info@marchideo.com</a> </li>
-                    <li><a href="">shop@marchideo.com</a></li>
-                    <li><a href=""><ion-icon name="time-outline" class="me-1"></ion-icon>09:00-18:00</a></li>
-                  </ul>
-        
-                </div>
-              </div>
-          </footer>
-          <section>
+        </footer>
+        <section>
             <div class="w-100 Copyright align-items-center d-flex">
-              <p id="Copyright-text align-center">&#169;2022 Всички права запазени. Създаден с <a href="dreamshop.io">Dream
-                  Shop</a></p>
+                <p id="Copyright-text align-center">&#169;2022 Всички права запазени. Създаден с <a
+                        href="dreamshop.io">Dream
+                        Shop</a></p>
             </div>
-          </section>
+        </section>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script>//plugin bootstrap minus and plus
-        //http://jsfiddle.net/laelitenetwork/puJ6G/
-        $('.btn-number').click(function (e) {
-            e.preventDefault();
-
-            fieldName = $(this).attr('data-field');
-            type = $(this).attr('data-type');
-            var input = $("input[name='" + fieldName + "']");
-            var currentVal = parseInt(input.val());
-            if (!isNaN(currentVal)) {
-                if (type == 'minus') {
-
-                    if (currentVal > input.attr('min')) {
-                        input.val(currentVal - 1).change();
-                    }
-                    if (parseInt(input.val()) == input.attr('min')) {
-                        $(this).attr('disabled', true);
-                    }
-
-                } else if (type == 'plus') {
-
-                    if (currentVal < input.attr('max')) {
-                        input.val(currentVal + 1).change();
-                    }
-                    if (parseInt(input.val()) == input.attr('max')) {
-                        $(this).attr('disabled', true);
-                    }
-
-                }
-            } else {
-                input.val(0);
-            }
-        });
-        $('.input-number').focusin(function () {
-            $(this).data('oldValue', $(this).val());
-        });
-        $('.input-number').change(function () {
-
-            minValue = parseInt($(this).attr('min'));
-            maxValue = parseInt($(this).attr('max'));
-            valueCurrent = parseInt($(this).val());
-
-            name = $(this).attr('name');
-            if (valueCurrent >= minValue) {
-                $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
-            } else {
-                alert('Sorry, the minimum value was reached');
-                $(this).val($(this).data('oldValue'));
-            }
-            if (valueCurrent <= maxValue) {
-                $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
-            } else {
-                alert('Sorry, the maximum value was reached');
-                $(this).val($(this).data('oldValue'));
-            }
-
-
-        });
-        $(".input-number").keydown(function (e) {
-            // Allow: backspace, delete, tab, escape, enter and .
-            if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
-                // Allow: Ctrl+A
-                (e.keyCode == 65 && e.ctrlKey === true) ||
-                // Allow: home, end, left, right
-                (e.keyCode >= 35 && e.keyCode <= 39)) {
-                // let it happen, don't do anything
-                return;
-            }
-            // Ensure that it is a number and stop the keypress
-            if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>//plugin bootstrap minus and plus
+            //http://jsfiddle.net/laelitenetwork/puJ6G/
+            $('.btn-number').click(function (e) {
                 e.preventDefault();
-            }
-        });</script>
+
+                fieldName = $(this).attr('data-field');
+                type = $(this).attr('data-type');
+                var input = $("input[name='" + fieldName + "']");
+                var currentVal = parseInt(input.val());
+                if (!isNaN(currentVal)) {
+                    if (type == 'minus') {
+
+                        if (currentVal > input.attr('min')) {
+                            input.val(currentVal - 1).change();
+                        }
+                        if (parseInt(input.val()) == input.attr('min')) {
+                            $(this).attr('disabled', true);
+                        }
+
+                    } else if (type == 'plus') {
+
+                        if (currentVal < input.attr('max')) {
+                            input.val(currentVal + 1).change();
+                        }
+                        if (parseInt(input.val()) == input.attr('max')) {
+                            $(this).attr('disabled', true);
+                        }
+
+                    }
+                } else {
+                    input.val(0);
+                }
+            });
+            $('.input-number').focusin(function () {
+                $(this).data('oldValue', $(this).val());
+            });
+            $('.input-number').change(function () {
+
+                minValue = parseInt($(this).attr('min'));
+                maxValue = parseInt($(this).attr('max'));
+                valueCurrent = parseInt($(this).val());
+
+                name = $(this).attr('name');
+                if (valueCurrent >= minValue) {
+                    $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
+                } else {
+                    alert('Sorry, the minimum value was reached');
+                    $(this).val($(this).data('oldValue'));
+                }
+                if (valueCurrent <= maxValue) {
+                    $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
+                } else {
+                    alert('Sorry, the maximum value was reached');
+                    $(this).val($(this).data('oldValue'));
+                }
+
+
+            });
+            $(".input-number").keydown(function (e) {
+                // Allow: backspace, delete, tab, escape, enter and .
+                if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+                    // Allow: Ctrl+A
+                    (e.keyCode == 65 && e.ctrlKey === true) ||
+                    // Allow: home, end, left, right
+                    (e.keyCode >= 35 && e.keyCode <= 39)) {
+                    // let it happen, don't do anything
+                    return;
+                }
+                // Ensure that it is a number and stop the keypress
+                if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                    e.preventDefault();
+                }
+            });</script>
 </body>
 
 </html>

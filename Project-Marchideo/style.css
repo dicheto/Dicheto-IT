@@ -1012,3 +1012,19 @@ img.selection-img {
 div.cart_product-locator span, div.cart_product-locator h3, div.cart_product-locator sup {
     color: #000;
 }
+.mt-6 {
+    margin-top: 4.5rem !important;
+}
+.breadcrumbs {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.breadcrumbs ionic-icon {
+    font-size: 13.95px;
+    width: 24px;
+    font-weight: 500;
+}
+.modal-footer {
+    background-color: white !important;
+}
