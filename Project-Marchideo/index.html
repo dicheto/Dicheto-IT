@@ -117,12 +117,13 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="" data-bs-toggle="modal" data-bs-target="#Cart"><ion-icon class="nav-item icons-nav"
-                name="cart-outline"></ion-icon></a>
+            
 
           </li>
           <li class="nav-item">
-            <div class="dropdown icons-nav cart-icon">
+            <div class="dropdown icons-nav cart-icon d-flex ">
+              <a href="" data-bs-toggle="modal" data-bs-target="#Cart"><ion-icon class="nav-item icons-nav"
+                name="cart-outline"></ion-icon></a>
               <a href="#" role="button" data-bs-toggle="dropdown">
                 <ion-icon class="cart-icon" name="accessibility-outline"></ion-icon>
               </a>
@@ -132,65 +133,65 @@
               <!--     Pop-up-ове     -->
               <!--                    -->
               <!--                    -->
-              <div class="modal" id="MyProfile" tabindex="-1" aria-labelledby="MyProfile" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered-fix ">
-                  <div class="modal-content modal-MyProfile-fix">
-                    <div class="modal-header">
-                      <h5 class="modal-title text-center pop-up-header" id="MyProfileLabel">Моят профил</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <h3>Лични данни</h3>
-                      <div class="mx-1">
-                        <form class="input-MyProfile needs-validation was-validated" novalidate="">
-                          <input type="text" class="form-control" id="MyProfile-Validation01" placeholder="Име"
-                            value="Иван" required>
-
-                          <input type="text" class="form-control" id="MyProfile-Validation02" placeholder="Фамилия"
-                            value="Иванов" required>
-
-                          <input type="number" class="form-control" id="MyProfile-Validation03" placeholder="Телефон"
-                            required>
-
-                          <input type="text" class="form-control" id="MyProfile-Validation04" placeholder="Имейл"
-                            value="Ivan.Ivanov@icloud.com" required>
-
-                        </form>
-
+                <div class="modal" id="MyProfile" tabindex="-1" aria-labelledby="MyProfile" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered-fix ">
+                    <div class="modal-content modal-MyProfile-fix">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-center pop-up-header" id="MyProfileLabel">Моят профил</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <h3>Изтриване на профила</h3>
-                      <div class="mb-1 mx-1" style="width: 100%;">
-                        <p>Ако изтриете профила си, всички лични данни ще бъдат премахнати. Изтриването е необратим
-                          процес.</p>
-                        <a href="" class="btn-razgledai">Изтрий</a>
-                      </div>
-                      <h3>Предпочитан начин за връзка</h3>
-                      <div class="mb-1 mx-1" style="width: 100%;">
-                        <p><ion-icon name="checkmark-outline"></ion-icon> по телефона</p>
-                        <p><ion-icon name="checkmark-outline"></ion-icon> по Имейл</p>
-                      </div>
-                      <h3>Свързване</h3>
-                      <div class="mb-1 mx-1 row" style="width: 100%;">
-                        <div class="col-6">
-                          <p class="profile-facebook"><ion-icon class="profile-facebook"
-                              name="logo-facebook"></ion-icon> Facebook
-                          </p>
-                          <p class="profile-google"><ion-icon class="profile-google" name="logo-google"></ion-icon>
-                            Google</p>
+                      <div class="modal-body">
+                        <h3>Лични данни</h3>
+                        <div class="mx-1">
+                          <form class="input-MyProfile needs-validation was-validated" novalidate="">
+                            <input type="text" class="form-control" id="MyProfile-Validation01" placeholder="Име"
+                              value="Иван" required>
+
+                            <input type="text" class="form-control" id="MyProfile-Validation02" placeholder="Фамилия"
+                              value="Иванов" required>
+
+                            <input type="number" class="form-control" id="MyProfile-Validation03" placeholder="Телефон"
+                              required>
+
+                            <input type="text" class="form-control" id="MyProfile-Validation04" placeholder="Имейл"
+                              value="Ivan.Ivanov@icloud.com" required>
+
+                          </form>
+
                         </div>
-                        <div class="col-6 text-end">
-                          <p class="profile-facebook">Свържи</p>
-                          <p class="profile-google"><ion-icon class="profile-google"
-                              name="trash-bin-outline"></ion-icon></p>
+                        <h3>Изтриване на профила</h3>
+                        <div class="mb-1 mx-1" style="width: 100%;">
+                          <p>Ако изтриете профила си, всички лични данни ще бъдат премахнати. Изтриването е необратим
+                            процес.</p>
+                          <a href="" class="btn-razgledai">Изтрий</a>
+                        </div>
+                        <h3>Предпочитан начин за връзка</h3>
+                        <div class="mb-1 mx-1" style="width: 100%;">
+                          <p><ion-icon name="checkmark-outline"></ion-icon> по телефона</p>
+                          <p><ion-icon name="checkmark-outline"></ion-icon> по Имейл</p>
+                        </div>
+                        <h3>Свързване</h3>
+                        <div class="mb-1 mx-1 row" style="width: 100%;">
+                          <div class="col-6">
+                            <p class="profile-facebook"><ion-icon class="profile-facebook"
+                                name="logo-facebook"></ion-icon> Facebook
+                            </p>
+                            <p class="profile-google"><ion-icon class="profile-google" name="logo-google"></ion-icon>
+                              Google</p>
+                          </div>
+                          <div class="col-6 text-end">
+                            <p class="profile-facebook">Свържи</p>
+                            <p class="profile-google"><ion-icon class="profile-google"
+                                name="trash-bin-outline"></ion-icon></p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn-razgledai text-center" data-bs-dismiss="modal">Запази</button>
+                      <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn-razgledai text-center" data-bs-dismiss="modal">Запази</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
               <div class="modal" id="Login" tabindex="-1" aria-labelledby="Login" aria-hidden="true">
                 <div class="modal-dialog modal-sm modal-dialog-centered ">
                   <div class="modal-content modal-MyProfile-fix">
@@ -509,7 +510,7 @@
     </div>
 
     <div class="w-100  product-selection-bg">
-      <div class="row row-fix pb-2 gap-2  w-100">
+      <div class="row row-fix pb-2 gap-2 me-1 w-100">
         <div
           class="col ms-1 card card-products product-gal l-selection padding-product-section text-center position-relative align-items-center product-selection text-center">
           <button type="button" class="btn btn-danger mb-3">-25%</button>
@@ -625,7 +626,7 @@
 
   <section class="container" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
     <div class="w-100 justify-content-center">
-      <div class="row row-fix gap-1 ps-5 w-100 py-5">
+      <div class="row row-fix gap-1 mx-auto w-100 py-5">
         <div class="col">
           <div class="card ">
             <img style="width: 100%;"
