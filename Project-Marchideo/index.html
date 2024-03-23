@@ -66,6 +66,22 @@
         padding: 0px;
       }
     }
+    @media (max-width: 440px) {
+      .card-products {
+        height: auto;
+      }
+      sup.sup-color-discount, span.diagonal {
+        text-decoration: line-through;
+      }
+    }
+    @media (max-width: 380px) {
+      .card-products {
+        height: auto;
+      }
+      .index_ProductSelection-heading {
+        height: auto !important;
+      }
+    }
   </style>
 </head>
 
@@ -524,9 +540,9 @@
 
 
     <hr class="solid">
-    <div class="row d-lg-none w-100">
+    <div class="row header_mobile-fixer d-lg-none w-100">
 
-      <div class="col-2 pb-1 pt-1">
+      <div class="col-2 ">
         <div class=" ps-4 d-block d-lg-none dropdown">
           <a class="btn p-0 m-0" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
             aria-expanded="false">
@@ -556,20 +572,20 @@
 
 
       </div>
-      <div class="col-10 d-flex justify-content-end pe-4">
-        <ul class="nav justify-content-end align-items-center gap-4">
-          <li class="nav-item">
-            <div class="form d-flex h-100 m-0 p-0 align-items-center">
+      <div class="col-10 d-flex h-100 justify-content-end">
+        <ul class="nav w-100 d-flex justify-content-end align-items-center">
+          <li class="nav-item d-flex justify-content-end w-100 align-items-center">
+            <div class="form d-flex h-100 m-0 p-0 justify-contend-end align-items-center">
               <ion-icon class="fa fa-search icons-nav" id="search-icon" name="search-outline"></ion-icon>
-              <input type="text" class="form-control form-input" placeholder="Търси">
+              <input type="text" class="form-control pe-0 w-100 form-input" placeholder="Търси">
             </div>
+            <a href="" data-bs-toggle="modal" class="me-2 d-flex align-items-center" data-bs-target="#Cart"><ion-icon class="nav-item icons-nav"
+              name="cart-outline"></ion-icon></a>
+              <a href="" data-bs-toggle="dropdown" class="me-1 d-flex align-items-center"><ion-icon class="nav-item icons-nav"
+                name="accessibility-outline"></ion-icon></a>
           </li>
           <li class="nav-item">
-            <a href="" data-bs-toggle="modal" class="me-1" data-bs-target="#Cart"><ion-icon class="nav-item icons-nav"
-                name="cart-outline"></ion-icon></a>
-            <a href="#" role="button" class="nav-item icons-nav ms-2" data-bs-toggle="dropdown" aria-expanded="false">
-              <ion-icon class="cart-icon" name="accessibility-outline"></ion-icon>
-            </a>
+            
 
           </li>
           <!-- <li class="nav-item h-100 d-flex align-items-center">
@@ -596,13 +612,13 @@
   </section>
 
   <section>
-    <div style="height: 50px;" class="row row-fix w-100 text-center">
-      <span style="font-size: 25px; background-color: #2ebaa7; color: #711bcd; font-weight: 700;">Най-купувани
+    <div style="height: 50px;" class="row row-fix w-100 text-center index_ProductSelection-heading">
+      <span class="index_ProductSelection-heading" >Най-купувани
         продукти</span>
     </div>
 
     <div class="w-100  product-selection-bg">
-      <div class="row row-fix pb-2 gap-2  w-100">
+      <div class="row row-fix pb-2 gap-1 gap-md-2 w-100">
         <div
           class="col ms-1 card card-products product-gal l-selection padding-product-section text-center position-relative align-items-center product-selection text-center mx-1 me-sm-0">
           <button type="button" class="btn btn-danger mb-3">-25%</button>
@@ -629,7 +645,7 @@
                 00</sup>лв.</span></h3>
         </div>
         <div
-          class="col card card-products l-selection padding-product-section text-center align-items-center product-selection text-center d-none d-sm-block me-sm-1 me-md-0">
+          class="col card card-products l-selection padding-product-section text-center align-items-center product-selection text-center  d-block me-1 me-md-0">
           <button type="button" class="btn btn-danger mb-3">-25%</button>
           <br>
           <img class="selection-img text-center"
@@ -728,7 +744,7 @@
 
   <section class="container" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
     <div class="w-100 justify-content-center">
-      <div class="row row-fix gap-1 ps-5 w-100 py-5">
+      <div class="row row-fix gap-1 w-100 py-5">
         <div class="col">
           <div class="card ">
             <img style="width: 100%;"
