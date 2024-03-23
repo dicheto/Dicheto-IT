@@ -45,7 +45,7 @@
 <body>
 
 
-    <div class="row">
+    <div class="row row-fix">
 
         <aside class="col-12 col-sm-2 collapse float-left categories_sidebar-row-fix categories_sidebar"
             id="aside-collapse">
@@ -113,7 +113,7 @@
 
         </aside>
 
-        <main class="col mx-auto ps-0">
+        <main class="col pe-0 ps-0">
 
             <div class="w-100 ">
                 <header>
@@ -819,22 +819,23 @@
 
 
                 </div>
-                <div class="col-10 d-flex justify-content-end pe-4">
-                    <ul class="nav justify-content-end align-items-center gap-4">
-                        <li class="nav-item">
-                            <div class="form d-flex h-100 m-0 p-0 align-items-center">
+                <div class="col-10 d-flex justify-content-end ">
+                    <ul class="nav align-items-center">
+                        <li class="d-flex align-items-center h-100 nav-item">
+                            <div class="form d-flex h-100 m-0 mb-0 p-0 align-items-center">
                                 <ion-icon class="fa fa-search icons-nav" id="search-icon"
                                     name="search-outline"></ion-icon>
-                                <input type="text" class="form-control form-input" placeholder="Търси">
+                                <input type="text" class="form-control mb-0 form-input" placeholder="Търси">
                             </div>
+                            <a href="" data-bs-toggle="modal" class="h-100 d-flex align-items-center me-1" data-bs-target="#Cart"><ion-icon
+                                class="nav-item icons-nav" name="cart-outline"></ion-icon></a>
+                        <a href="#" role="button" class="nav-item icons-nav ms-2" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <ion-icon class="cart-icon" name="accessibility-outline"></ion-icon>
+                        </a>
                         </li>
                         <li class="nav-item">
-                            <a href="" data-bs-toggle="modal" class="me-1" data-bs-target="#Cart"><ion-icon
-                                    class="nav-item icons-nav" name="cart-outline"></ion-icon></a>
-                            <a href="#" role="button" class="nav-item icons-nav ms-2" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <ion-icon class="cart-icon" name="accessibility-outline"></ion-icon>
-                            </a>
+                            
 
                         </li>
                         <!-- <li class="nav-item h-100 d-flex align-items-center">
