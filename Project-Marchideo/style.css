@@ -87,6 +87,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    background-position-y: center;
 }
 
 
@@ -593,10 +594,7 @@ ion-icon {
 
 }
 
-.modal-MyProfile-fix {
-    width: 120%;
-    transform: translateX(-9.385%);
-}
+
 
 /* div.cart-contacts input {
     width: 245px;
@@ -1027,4 +1025,68 @@ div.cart_product-locator span, div.cart_product-locator h3, div.cart_product-loc
 }
 .modal-footer {
     background-color: white !important;
+}
+.index_sectionOne {
+    padding-left: 120px; 
+    padding-right: 120px; 
+    height: auto;
+}
+.Orders_none_paragraph ion-icon, .orders_none_paragraph ion-icon {
+    width: 48px;
+    height: 48px;
+}
+.orders_none_heading {
+    font-size: 19px;
+    font-weight: 700;
+    font-style: normal;
+    color: #000;
+    line-height: 1.5;
+}
+.Cart_modal-dialog {
+    max-width: 90% !important;
+}
+.OrdersAddress_modal-dialog {
+    max-width: 50% !important;
+}
+.ChangePassword_modal-dialog {
+    max-width: 60% !important;
+}
+.Password-change_inputs {
+    font-size: calc(12px + (1 * 0.3vmin));
+    border: 1px solid #cbbeda;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+}
+.PassordChange_strengthBar {
+    margin-left: calc(5px + 0px + (1 * 0.4vmin));
+    border: 1px solid #cbbeda;
+    height: 20px;
+    border-radius: 10px;
+}
+.PasswordChange_min-requirements li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.5;
+    list-style: none;
+    display: flex;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+.PasswordChange_min-requirements li::before {
+    content: '';
+    border: 1px solid transparent;
+    border-right-color: currentColor;
+    border-bottom-color: currentColor;
+    width: 7px;
+    height: 14px;
+    transform: rotate(35deg);
+    transform-origin: 100% 100%;
+    margin: 3px 14px 3px 3px;
+    display: flex;
+
+}
+.PasswordChange_min-requirements {
+    margin: 20px 0;
 }
