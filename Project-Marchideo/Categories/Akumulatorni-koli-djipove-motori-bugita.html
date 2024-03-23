@@ -10,7 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon"
         href="https://cdn.mydreamshop.io/source/private/marchideo/application/configuration/application.themes.logo_favicon/1612266856831760193d68cb0e9771.png">
-    <link rel="stylesheet" href="/Project-Marchideo/style.css">
+    <link rel="stylesheet" href="https://dicheto.github.io/Dicheto-IT/Project-Marchideo/style.css">
     <style>
         @media (max-width: 993px) {
             div.card-products:nth-child(1) {
@@ -38,7 +38,11 @@
             }
         }
 
-        @media (min-width: 576px) {}
+        @media (min-width: 576px) {
+            .modal-dialog {
+                max-width: 90% !important;
+            }
+        }
     </style>
 </head>
 
@@ -50,9 +54,9 @@
         <aside class="col-12 col-sm-2 collapse float-left categories_sidebar-row-fix categories_sidebar"
             id="aside-collapse">
 
-            <div class="w-100 categories_sidebar_filter-close d-flex align-items-center align-items-center py-2 ps-3">
-                <a class="align-items-center d-flex" data-bs-toggle="collapse" href="#aside-collapse"
-                    role="button"><ion-icon name="arrow-back-outline"></ion-icon>Затвори</a>
+            <div class="w-100 categories_sidebar_filter-close d-flex align-items-center py-2 ps-3">
+                <a data-bs-toggle="collapse" href="#aside-collapse" role="button"><ion-icon
+                        name="arrow-back-outline"></ion-icon>Затвори</a>
             </div>
             <div>
                 <a href="#categories_filter-search"
@@ -186,15 +190,13 @@
                                         </li>
                                         <li><a class="dropdown-item" href="#"><ion-icon name="cart-outline"></ion-icon>
                                                 Поръчки</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#Orders_Address" href="#"><ion-icon
+                                        <li><a class="dropdown-item" href="#"><ion-icon
                                                     name="location-outline"></ion-icon> Адреси за
                                                 Доставка</a></li>
-                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#changePassword"><ion-icon
+                                        <li><a class="dropdown-item" href="#"><ion-icon
                                                     name="lock-closed-outline"></ion-icon> Смяна на
                                                 паролата</a></li>
-                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#LikedProducts"><ion-icon name="heart-outline"></ion-icon>
+                                        <li><a class="dropdown-item" href="#"><ion-icon name="heart-outline"></ion-icon>
                                                 Любими продукти</a>
                                         </li>
                                         <li><a class="dropdown-item" href="#"><ion-icon name="mail-outline"></ion-icon>
@@ -335,7 +337,7 @@
 
                                         <div class="modal" id="Cart" tabindex="-1" aria-labelledby="Cart"
                                             aria-hidden="true">
-                                            <div class="Cart_modal-dialog modal-dialog mx-auto">
+                                            <div class="modal-dialog mx-auto">
                                                 <div class="modal-content modal-fix-cart">
                                                     <div class="modal-header">
                                                         <h5 class="modal-title w-100 text-center pop-up-header"
@@ -639,7 +641,22 @@
                                                                                 
 
                                                                             </div> -->
+                                                                    <div class="col">
+                                                                        <div class="w-100 h-50 d-flex align-items-end">
+                                                                            <p style="clear: both;"
+                                                                                class=" w-100 cart_label-products">Общо
+                                                                            </p>
 
+
+                                                                        </div>
+                                                                        <div class="d-flex w-50 align-items-end pb-3  h-50"
+                                                                            style="clear: both;">
+                                                                            <h3 class=" cart_label-"><span
+                                                                                    class="h-auto text-color-discount">396<sup
+                                                                                        class="sup-color-discount">01</sup>лв.
+
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class=" mt-3 border border-radius-Delivery">
@@ -656,132 +673,27 @@
                                                                         <span class="me-auto">Общо</span>
                                                                         <span class="text-end">0<sup>00</sup>лв.</span>
                                                                     </div>
-
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="modal-footer pb-0 justify-content-center">
-                                                                <button type="button" class="btn-razgledai text-center"
-                                                                    data-bs-dismiss="modal">Запази</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="modal" id="Orders_Address" tabindex="-1"
-                                            aria-labelledby="Orders_Address" aria-hidden="true">
-                                            <div
-                                                class="OrdersAddress_modal-dialog modal-dialog-centered modal-dialog mx-auto">
-                                                <div class="modal-content modal-fix-cart">
-                                                    <div class="modal-header">
-
-                                                        <h5 class="modal-title w-100 text-center pop-up-header"
-                                                            id="Cart">Адреси за доставка</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <section class="py-3">
-                                                            <p class="text-center pb-3 orders_none_paragraph"><ion-icon
-                                                                    name="location-outline"></ion-icon></p>
-                                                            <h4 class="text-center orders_none_heading">Добавете адрес
-                                                                за доставка</h4>
-                                                        </section>
-                                                    </div>
-                                                    <div class="modal-footer justify-content-center">
-                                                        <button type="button" class="btn-razgledai text-center"
-                                                            data-bs-dismiss="modal">Запази</button>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="modal" id="changePassword" tabindex="-1"
-                                            aria-labelledby="Change_Password" aria-hidden="true">
-                                            <div
-                                                class="ChangePassword_modal-dialog modal-dialog-centered modal-dialog mx-auto">
-                                                <div class="modal-content modal-fix-cart">
-                                                    <div class="modal-header">
-
-                                                        <h5 class="modal-title w-100 text-center pop-up-header"
-                                                            id="Cart">Смяна на паролата</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <section class="p-2">
-                                                            <form action="">
-                                                                <input class="w-100 Password-change_inputs mb-3 px-2"
-                                                                    type="text" placeholder="Текуща парола" required>
-                                                                <input class="w-100 Password-change_inputs mb-3 px-2"
-                                                                    type="text" placeholder="Нова парола" required>
-                                                                <input class="w-100 Password-change_inputs mb-3 px-2"
-                                                                    type="text" placeholder="Потвърди новата парола"
-                                                                    required>
-                                                            </form>
-                                                        </section>
-                                                        <div class="row">
-                                                            <div class="col-auto">
-                                                                <p style="float: left;">Сложност на парола</p>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="PassordChange_strengthBar">
                                                                 </div>
                                                             </div>
+
                                                         </div>
-                                                        <section class="PasswordChange_min-requirements">
-                                                            <p>Минимални изисквания за сигурност</p>
-                                                            <ul>
-                                                                <li>Паролата трябва да е най-малко шест символа.</li>
-                                                                <li>Паролата трябва да съдържа поне една главна буква и една цифра.</li>
-                                                                <li>Паролата трябва да съдържа специални символи като "!@#$%*".</li>
-                                                            </ul>
-                                                        </section>
-                                                        <div class="modal-footer justify-content-center">
-                                                            <button type="submit" class="btn-razgledai text-center"
-                                                                data-bs-dismiss="modal">Промени</button>
-                                                        </div>
-                                                        
-                                                        
                                                     </div>
 
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal" id="LikedProducts" tabindex="-1"
-                                            aria-labelledby="LikedProducts" aria-hidden="true">
-                                            <div
-                                                class="Cart_modal-dialog modal-dialog-centered modal-dialog mx-auto">
-                                                <div class="modal-content modal-fix-cart">
-                                                    <div class="modal-header">
-
-                                                        <h5 class="modal-title w-100 text-center pop-up-header"
-                                                            id="Cart">Любими продукти</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <section class="py-3">
-                                                            <p class="text-center pb-3 orders_none_paragraph"><ion-icon
-                                                                    name="heart-outline"></ion-icon></p>
-                                                            <h4 class="text-center orders_none_heading">Добавете любими продукти.</h4>
-                                                        </section>
-
-                                                    </div>
-
+                                                <div class="modal-footer justify-content-center">
+                                                    <button type="button" class="btn-razgledai text-center"
+                                                        data-bs-dismiss="modal">Запази</button>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
 
-                                </li>
-                            </ul>
                         </div>
-                </header>
+
+                        </li>
+                        </ul>
+                    </div>
+
 
             </div>
 
@@ -850,8 +762,7 @@
                 <div class="container">
                     <p class="w-100 pt-2 text-center d-flex align-items-center justify-content-center breadcrumbs ">
                         <ion-icon name="home-outline" class="me-1"></ion-icon> > Акумулаторни коли, джипове, мотори,
-                        бъгита
-                    </p>
+                        бъгита</p>
                     <h1 class="w-100 pt-4 text-center categories_category-name">Акумулаторни коли</h1>
                     <p class="w-100 pb-5 text-center categories_category-name_description">Всички Акумулаторни Коли са с
                         гаранция. Предлагаме също и сервиз за Акумулаторни Коли. Бърза Доставка. Консултации по телефон
@@ -3287,7 +3198,7 @@
         <script>
             AOS.init();
         </script>
-        <!-- <script>//plugin bootstrap minus and plus
+        <script>//plugin bootstrap minus and plus
             //http://jsfiddle.net/laelitenetwork/puJ6G/
             $('.btn-number').click(function (e) {
                 e.preventDefault();
@@ -3359,7 +3270,7 @@
                 if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
                     e.preventDefault();
                 }
-            });</script> -->
+            });</script>
 </body>
 
 </html>
