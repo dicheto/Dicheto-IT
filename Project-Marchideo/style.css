@@ -238,7 +238,7 @@ footer li {
     width: auto;
 }
 
-.row-fix {
+.row-fix> {
     margin-left: 0px;
 }
 
