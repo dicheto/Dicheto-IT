@@ -998,9 +998,7 @@ img.selection-img {
     border-radius: 0 30px 30px 0;
     background-color: #6f19cb;
 }
-.height-fix_quantity {
-    height: 48px !important;
-}
+
 .cart_label-products {
     font-weight: 400;
     font-style: normal;
@@ -1097,6 +1095,5 @@ div.cart_product-locator span, div.cart_product-locator h3, div.cart_product-loc
 .index_ProductSelection-heading {
     font-size: 25px; 
     background-color: #2ebaa7; 
-    color: #711bcd; 
-    font-weight: 700;
+    color: #711bcd; font-weight: 700;
 }
