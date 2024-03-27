@@ -196,11 +196,11 @@
     display: block;
 }
 
-.card {
+.card, .border-blog-articles {
     transition: all 0.5s;
 }
 
-.card:hover {
+.card:hover, .border-blog-articles:hover {
 
     box-shadow: var(--bs-box-shadow) !important;
 
@@ -793,6 +793,7 @@ div#Login a {
 .product_title {
     font-size: calc(12px + (6 * 0.3vmin));
     font-weight: 700;
+    line-height: 1.5;
 }
 
 .product_brand {
@@ -1102,20 +1103,20 @@ div.cart_product-locator span, div.cart_product-locator h3, div.cart_product-loc
     background-color: #2ebaa7; 
     color: #711bcd; font-weight: 700;
 }
-.terms-of-use p, ul li {
+.pages-container p, ul li {
     font-size: calc(12px + (1 * 0.3vmin));
     font-family: 'Montserrat Alternates';
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
 }
-.terms-of-use h2 {
+.pages-container h2 {
     font-size: calc(12px + (5 * 0.3vmin));
     font-family: 'Montserrat Alternates';
     font-weight: 700;
     line-height: 1.5;
 }
-.terms-of-use_container ul {
+.pages-container ul {
     padding-left: 30px;
 }
 ul.numbers li {
@@ -1130,10 +1131,137 @@ ul.points li {
     font-weight: 600;
     background-color: #cc0000;
 }
-.terms-of-use_container {
+.pages-container {
     max-width: 1024px;
     margin: 20px 10px;
     border: 1px solid #cbbeda;
     border-radius: 10px;
     padding: calc(5px + 0px + (4 * 0.4vmin));
+}
+body.dotavka-i-plashtane h2 {
+    font-weight: 600 !important;
+}
+.border-none {
+    border: none !important;
+}
+.blog_preview-img {
+    max-width: 85%;
+}
+.blog_dates {
+    font-size: calc(12px + (1 * 0.3vmin));
+    font-weight: 400;
+    line-height: 1.5;
+}
+.blog_headings {
+    font-size: calc(12px + (4 * 0.3vmin));
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+.border-blog-articles {
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+.border-blog-articles {
+    
+}
+.product_sku {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-right: calc(5px + (1 * 0.4vmin)) !important;
+    font-size: 12px;
+}
+.product_freeDelivery {
+    font-size: calc(12px + (1 * 0.3vmin));
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 10px;
+    border: 1px solid #4c3663;
+    color: #4c3663;
+}
+.product_freeDelivery-icon {
+    width: 80%;
+    
+}
+.product-AddToCart {
+    font-size: calc(12px + (1 * 0.3vmin));
+    background-color: #6f19cb;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    padding-top: calc(5px + 0px + (2 * 0.4vmin));
+    padding-bottom: calc(5px + 0px + (2 * 0.4vmin));
+    padding-left: calc(5px + 0px + (3 * 0.4vmin));
+    padding-right: calc(5px + 0px + (3 * 0.4vmin));
+    align-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.product_description {
+    font-size: calc(12px + (1 * 0.3vmin));
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0px 20px;
+}
+.product_reviews-heading {
+    font-size: calc(12px + (5 * 0.3vmin));
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: calc(5px + (4 * 0.4vmin)) !important;
+}
+.product_reviews-btn {
+    font-size: calc(12px + (1 * 0.3vmin));
+    padding-top: calc(5px + 0px + (1 * 0.4vmin));
+    padding-bottom: calc(5px + 0px + (1 * 0.4vmin));
+    padding-left: calc(5px + 0px + (3 * 0.4vmin));
+    padding-right: calc(5px + 0px + (3 * 0.4vmin));
+    background-color: #6f19cb;
+    border-radius: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 260px;
+    color: #fff;
+}
+.product_sidebar-border {
+    border-radius: 10px;
+    border: 1px solid #cbbeda;
+}
+.page_count_slider-disabled {
+    font-size: calc(12px + (1 * 0.3vmin));
+    line-height: 1.5;
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cbbeda;
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+}
+.page_count_slider-selected {
+    font-size: calc(12px + (1 * 0.3vmin));
+    line-height: 1.5;
+    font-weight: 400;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cbbeda;
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s;
+    color: #fff;
+    background: #654884;
+    border-color: #4c3663;
+}
+.example_blogPost-ul li {
+    margin: 40px 20px;
 }
