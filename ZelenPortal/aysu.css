@@ -196,7 +196,7 @@ aside{
     width: 30px;
     height: 30px;
     text-align: center;
-    margin: 0 8px 16px 8px;
+    margin: 0 8px 16px;
 }
 .blog-page-links a:hover{
     background-color: rgb(119, 119, 218);
@@ -219,7 +219,7 @@ aside{
     width: 30px;
     height: 30px;
     text-align: center;
-    margin: 0 8px 16px 8px;
+    margin: 0 8px 16px;
 }
 
 /* ZA NAS */
@@ -245,6 +245,6 @@ td{
     text-align: left;
 }
 .ulli li{
-    margin: 0 120px 0 120px;
+    margin: 0 120px;
     font-size: 18px;
 }

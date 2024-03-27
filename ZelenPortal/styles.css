@@ -117,7 +117,6 @@ a.Nauchi:hover {
 }
 .article-heading {
     font-weight: 300;
-    letter-spacing: 0.1rem;
     font-size: 28px;
     color: black;
     letter-spacing: 0.05em;
@@ -208,7 +207,6 @@ div.about-us-text p{
     color: rgb(150, 150, 150) !important;
     font-size: 16 px;
     font-family: 'Montserrat', sans-serif;
-    text-align: left;
     height: auto;
     text-align: left;
 }
@@ -403,7 +401,7 @@ img.blog_aside-article-image {
     width: 30px;
     height: 30px;
     text-align: center;
-    margin: 0 8px 16px 8px;
+    margin: 0 8px 16px;
 }
 .blog-page-links a:hover{
     background-color: rgb(119, 119, 218);
@@ -426,7 +424,7 @@ img.blog_aside-article-image {
     width: 30px;
     height: 30px;
     text-align: center;
-    margin: 0 8px 16px 8px;
+    margin: 0 8px 16px;
 }
 
 .blog_newsletter {
