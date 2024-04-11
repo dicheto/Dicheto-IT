@@ -464,3 +464,48 @@ div.blog_newsletter p {
 .maslinki img {
     width: 100%;
 }
+ul.footer_btns {
+    list-style: none !important;
+}
+ul.footer_btns li a {
+    font-size: 16px;
+    transition: color 0.3s;
+    color: #70a843;
+}
+ul.footer_btns li a:hover {
+    color: #384554;
+}
+.bg-footer {
+    background-color: #123D27;
+}
+.footer_btns-social li a {
+    font-size: 16px;
+    transition: all 0.3s;
+    line-height: 16px;
+    color: #ffffff;
+}
+.footer_btns-social {
+    list-style: none;
+}
+.footer_btns-social li a ion-icon[name="logo-facebook"]:hover,.footer_btns-social li a ion-icon[name="logo-linkedin"]:hover {
+    color: #2a6496;
+}
+.footer_btns-social li a ion-icon[name="logo-instagram"]:hover {
+    color: #9a8f62;
+}
+.bg-footer-2 p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #888888;
+}
+.bg-footer-2{
+    background-color: #061C11;
+}
+.footer_logo-white {
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .footer_logo-white {
+        max-width: 50%;
+    }
+}
