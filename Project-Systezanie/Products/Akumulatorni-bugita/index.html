@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        @media (max-width: 993px) {
+            div.card-products:nth-child(1) {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 700px) {
+            div.card-products:nth-child(4) {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 490px) {
+            img.selection-img {
+                max-width: 100%;
+            }
+
+            div.product-selection {
+                height: auto;
+            }
+
+            span.diagonal {
+                text-decoration: line-through;
+            }
+        }
+
+        @media (min-width: 576px) {}
+    </style>
+</head>
+
+<body>
+
+
+    <div class="row d-flex">
+
+        <aside class="col-12 col-sm-2 collapse float-left categories_sidebar-row-fix categories_sidebar"
+            id="aside-collapse">
+
+            <div class="w-100 categories_sidebar_filter-close d-flex align-items-center align-items-center py-2 ps-3">
+                <a class="align-items-center d-flex" data-bs-toggle="collapse" href="#aside-collapse"
+                    role="button"><ion-icon name="arrow-back-outline"></ion-icon>Затвори</a>
+            </div>
+            <div>
+                <a href="#categories_filter-search"
+                    class="w-100 d-flex align-items-center categories_sidebar-borders categories_sidebar-buttons-executer p-2"
+                    data-bs-toggle="collapse"><span class="me-auto ms-2" aria-expanded="false">Търси</span> <ion-icon
+                        class="me-2" name="chevron-down-outline"></ion-icon></a>
+            </div>
+            <div class="collapse" id="categories_filter-search">
+                <form class="form-inline categories_sidebar-borders my-2 ">
+                    <input class="form-control mx-auto categories_filter-search-input ps-2 py-2" type="search"
+                        placeholder="Търсене по ключова дума" aria-label="Search">
+                </form>
+            </div>
+            <div>
+                <a href="#categories_filter-Manufacturer"
+                    class="w-100 d-flex align-items-center categories_sidebar-borders categories_sidebar-buttons-executer p-2"
+                    data-bs-toggle="collapse"><span class="me-auto ms-2" aria-expanded="false">Марки</span> <ion-icon
+                        class="me-2" name="chevron-down-outline"></ion-icon></a>
+            </div>
+            <div class="collapse" id="categories_filter-Manufacturer">
+                <form class="categories_sidebar-borders my-2 filter-button-group">
+                    <ul id="categories_sidebar_filter_manufacturers-list">
+                        <li class="d-flex">
+                            <a href="" data-filter="*"><input onclick="filterSelection('all')" type="checkbox"
+                                    id="everything" class="checkbox checkbox-circle" /></a>
+                            <label class="categories_filter_Manufacturer-options ms-2" for="everything">Всички</label>
+                        </li>
+                        <li class="d-flex">
+                            <a href="" onclick="filterSelection('audi')"><input onclick="filterSelection('audi')"
+                                    type="checkbox" id="Audi" class="checkbox checkbox-circle" /></a>
+                            <label class="categories_filter_Manufacturer-options ms-2" for="Audi">Audi</label>
+                        </li>
+                        <li class="d-flex">
+                            <a href="" data-filter=".bmw"><input onclick="filterSelection('bmw')" type="checkbox"
+                                    id="BMW" class="checkbox checkbox-circle" /></a>
+                            <label class="categories_filter_Manufacturer-options ms-2" for="BMW">BMW</label>
+                        </li>
+                        <li class="d-flex">
+                            <a href=""></a><input onclick="filterSelection('joyAuto')" type="checkbox" id="Joy-Auto"
+                                class="checkbox checkbox-circle" />
+                            <label class="categories_filter_Manufacturer-options ms-2" for="Joy-Auto">Joy Auto</label>
+                        </li>
+                        <li class="d-flex">
+                            <a href=""><input onclick="filterSelection('mercedes')" type="checkbox" id="Mercedes"
+                                    class="checkbox checkbox-circle" /></a>
+                            <label class="categories_filter_Manufacturer-options ms-2" for="Mercedes">Mercedes</label>
+                        </li>
+                    </ul>
+
+
+
+                </form>
+            </div>
+
+
+        </aside>
+
+        <main class="col mx-auto px-0">
+
+            <div class="w-100 ">
+                <header>
+
+                    <h1 class="announcment h-auto w-100">САЙТЪТ Е ПРЕДНАЗНАЧЕН ДА БЪДЕ КАТАЛОГ</h1>
+                    <div class="row row-fix align-items-center w-100 row-header">
+                        <div class="col d-none d-lg-block">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <button type="button " id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                            class="btn-all w-auto btn-primary"><ion-icon style="color: white;"
+                                                class="svg-icon-categories" name="albums-outline"></ion-icon> Всички
+                                            продукти</button>
+                                        <div class="dropdown-menu categories-dropdown animate slideIn"
+                                            aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="/Products/Akumulatorni-koli/index.html">Акумулаторни коли</a>
+                                            <a class="dropdown-item" href="/Products/Akumulatorni-djipove/index.html">Акумулаторни
+                                                джипове</a>
+                                            <a class="dropdown-item" href="/Products/Akumulatorni-motori/index.html">Акумулаторни
+                                                мотори</a>
+                                            <a class="dropdown-item" href="/Products/Akumulatorni-bugita/index.html">Акумулаторни
+                                                бъгита</a>
+                                            <a class="dropdown-item" href="/Products/Akumulatorni-traktori/index.html">Акумулаторни
+                                                трактори</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="col  text-center justify-content-center">
+                            <a href="/index.html"><img style="height: 90px; width: auto;" class="align-self-center" src="/upload/logos/logo.png" alt=""></a>
+                        </div>
+
+
+                        <div class="col me-xl-4 d-none d-lg-block">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <div class="form">
+                                        <ion-icon class="fa fa-search icons-nav" id="search-icon"
+                                            name="search-outline"></ion-icon>
+                                        <input onclick="window.open('/search.html')" type="text" class="form-control form-input" placeholder="Търси">
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+
+                    <hr class="solid">
+                    <div class="row header_mobile-fixer d-lg-none w-100">
+
+                        <div class="col-2 ">
+                            <div class=" ps-4 d-block d-lg-none dropdown">
+                                <a class="btn p-0 m-0" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="dropdown-text"></span><span class="dropdown-icon"><ion-icon
+                                            name="menu-outline"></ion-icon></span>
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="/Products/Akumulatorni-koli/index.html">Акумулаторни коли</a>
+                                    <a class="dropdown-item" href="/Products/Akumulatorni-djipove/index.html">Акумулаторни джипове</a>
+                                    <a class="dropdown-item" href="/Products/Akumulatorni-motori/index.html">Акумулаторни мотори</a>
+                                    <a class="dropdown-item" href="/Products/Akumulatorni-bugita/index.html">Акумулаторни бъгита</a>
+                                    <a class="dropdown-item" href="/Products/Akumulatorni-traktori/index.html">Акумулаторни трактори</a>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                        <div class="col-10 d-flex h-100 justify-content-end">
+                            <ul class="nav w-100 d-flex justify-content-end align-items-center">
+                                <li class="nav-item d-flex justify-content-end w-100 align-items-center">
+                                    <div class="form my-auto h-100 m-0 p-0 justify-contend-end align-items-center">
+                                        <ion-icon class="fa fa-search icons-nav align-center" id="search-icon"
+                                            name="search-outline"></ion-icon>
+                                        <input type="text" class="form-control pe-0 form-input" placeholder="Търси">
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <section class="page-category-navigator">
+                    <div class="container">
+                        <p class="w-100 pt-2 text-center d-flex align-items-center justify-content-center breadcrumbs ">
+                            <ion-icon name="home-outline" class="me-1"></ion-icon> > Акумулаторни коли, джипове, мотори,
+                            бъгита
+                        </p>
+                        <h1 class="w-100 pt-4 text-center categories_category-name">Акумулаторни коли</h1>
+                        <p class="w-100 pb-5 text-center categories_category-name_description">Всички Акумулаторни Коли
+                            са с
+                            гаранция. Предлагаме също и сервиз за Акумулаторни Коли. Бърза Доставка. Консултации по
+                            телефон
+                            и email. Топ Модели на уникални цени.</p>
+                    </div>
+
+                </section>
+                <section>
+                    <div class="d-flex container">
+                        <div class="me-auto p-2">
+                            <a class="categories_filter-button d-flex align-items-center" data-bs-toggle="collapse"
+                                href="#aside-collapse" role="button"><ion-icon name="filter-outline"></ion-icon><span
+                                    class="ps-2">Филтри</span></a>
+                        </div>
+
+                        <div class="p-2">
+
+                            <label for="Product_sort-id">Подреди по</label>
+                            <select class="Product_sort" id="Product_sort-id">
+                                <option value="1">Цена(ниска - висока)</option>
+                                <option value="2">Цена (висока - ниска)</option>
+                                <option value="3" selected>С отстъпка</option>
+                                <option value="4">Име (А-Я)</option>
+                                <option value="5">Име (Я-А)</option>
+                                <option value="6">Добавен (нов - стар)</option>
+                                <option value="7">Добавен (стар - нов)</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <section id="product-list container">
+                    <div class="row row-fix container-lg mx-auto pb-2 gap-2 w-100">
+                        <div class="col"></div>
+                        <div
+                            class="col bmw card card-products l-selection padding-product-section text-center align-items-center product-selection text-center">
+                            <button type="button" class="btn btn-promo mb-3">-25%</button>
+                            <br>
+                            <img class="selection-img text-center"
+                                src="/upload/images/17045483011051659957cd19af322.jpg" alt="">
+                            <div class="d-flex justify-content-center ">
+                                <a
+                                    href="/Products/Akumulatorni-bugita/akumulatoren-bagi-4x4-24vmp3-pleiar-s-meki-gumi-s-kozhena-sedalka.html"><button
+                                        class="btn-all-products btn-gallery me-btn-products"><ion-icon
+                                            class="btn-razg-buttons" name="search-outline"></ion-icon></button></a>
+
+                            </div>
+                            <h3 style="font-size: 16px;" class="mb-5 mt-2 categories_product-preview"> Акумулаторен бъги 4X4 24V,MP3 плейър, с меки гуми с Кожена седалка</h3>
+
+                            <button class="color-swatches red"> </button>
+                            <button class="color-swatches black"> </button>
+
+                            <h3 class=" mt-3" style="font-size: 20px; font-weight: 700;"><span
+                                    class="h-auto text-color-discount">1085<sup class="sup-color-discount">83</sup>лв.
+                                </span><span class="diagonal h-auto">299<sup class="sup-color">01</sup>лв.</span></h3>
+
+                        </div>
+                        <div class="col"></div>
+
+
+
+
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+        </main>
+
+        <footer data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <div class="w-100 footer">
+                <div class="row row-fix pt-2 pb-3  h-100 w-100 d-flex align-items-start justify-content-around">
+                    <div style="align-items: center;" class="col-12 col-md-4 pt-3 align-self-center text-center">
+
+                        <img style="width: 200px;" src="/upload/logos/logo-white.png" alt="">
+                        <br>
+
+                        <span>
+                            <a href="facebook.com/Marchideo.bg"><ion-icon class="contact-icons"
+                                    name="logo-facebook"></ion-icon></a>
+                            <a href="https://wa.link/5ketr8"><ion-icon class="contact-icons"
+                                    name="logo-whatsapp"></ion-icon></a>
+                            <a href="tel://0885559262"><ion-icon class="contact-icons"
+                                    name="call-outline"></ion-icon></a>
+                        </span>
+
+
+                    </div>
+                    <div style="align-items: center;" class="col-12 col-md-4 text-center pt-5">
+                        <h3>Информация <br></h3>
+                        <ul class="Information">
+                            <li><a href="ZaNas.html">За нас</a></li>
+                            <li><a href="Terms-of-use.html">Общи условия</a></li>
+                            <li><a href="dostavka-i-na4in-na-plashtane.html">Доставка и начини на плащне</a></li>
+                            <li><a href="Politika-za-poveritelnost.html">Политика за поверителност</a></li>
+                            <li><a href="Return.html">Връщане/Замяна на продукт</a></li>
+                            <li><a href="Cookie-Policy.html">Политика за бисквитки</a></li>
+                            <li><a href="blog.html">Блог</a></li>
+                            <li><a href="">ЧЗВ Често задавани въпроси</a></li>
+                        </ul>
+                    </div>
+                    <div style="align-items: center;" class="col-12 col-md-4 text-center pt-5">
+                        <h3>Контакти</h3>
+                        <ul class="contacts">
+                            <li><a href="tel://0885559262"><ion-icon name="call-outline" class="me-1"></ion-icon>088 555
+                                    9262</a></li>
+                            <li><a href="mailto://info@marchideo.com"><ion-icon name="mail-outline"
+                                        class="me-1"></ion-icon>info@marchideo.com</a>
+                            </li>
+                            <li><a href="mailto://shop.marchideo.com">shop@marchideo.com</a></li>
+                            <li><a href=""><ion-icon name="time-outline" class="me-1"></ion-icon>09:00-18:00</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+        </footer>
+        <section>
+            <div class="w-100 Copyright align-items-center d-flex">
+                <p id="Copyright-text align-center">&#169;2022 Всички права запазени. Създаден с <a
+                        href="dreamshop.io">Dream
+                        Shop</a></p>
+            </div>
+        </section>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>//plugin bootstrap minus and plus
+            //http://jsfiddle.net/laelitenetwork/puJ6G/
+            $('.btn-number').click(function (e) {
+                e.preventDefault();
+
+                fieldName = $(this).attr('data-field');
+                type = $(this).attr('data-type');
+                var input = $("input[name='" + fieldName + "']");
+                var currentVal = parseInt(input.val());
+                if (!isNaN(currentVal)) {
+                    if (type == 'minus') {
+
+                        if (currentVal > input.attr('min')) {
+                            input.val(currentVal - 1).change();
+                        }
+                        if (parseInt(input.val()) == input.attr('min')) {
+                            $(this).attr('disabled', true);
+                        }
+
+                    } else if (type == 'plus') {
+
+                        if (currentVal < input.attr('max')) {
+                            input.val(currentVal + 1).change();
+                        }
+                        if (parseInt(input.val()) == input.attr('max')) {
+                            $(this).attr('disabled', true);
+                        }
+
+                    }
+                } else {
+                    input.val(0);
+                }
+            });
+            $('.input-number').focusin(function () {
+                $(this).data('oldValue', $(this).val());
+            });
+            $('.input-number').change(function () {
+
+                minValue = parseInt($(this).attr('min'));
+                maxValue = parseInt($(this).attr('max'));
+                valueCurrent = parseInt($(this).val());
+
+                name = $(this).attr('name');
+                if (valueCurrent >= minValue) {
+                    $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
+                } else {
+                    alert('Sorry, the minimum value was reached');
+                    $(this).val($(this).data('oldValue'));
+                }
+                if (valueCurrent <= maxValue) {
+                    $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
+                } else {
+                    alert('Sorry, the maximum value was reached');
+                    $(this).val($(this).data('oldValue'));
+                }
+
+
+            });
+            $(".input-number").keydown(function (e) {
+                // Allow: backspace, delete, tab, escape, enter and .
+                if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+                    // Allow: Ctrl+A
+                    (e.keyCode == 65 && e.ctrlKey === true) ||
+                    // Allow: home, end, left, right
+                    (e.keyCode >= 35 && e.keyCode <= 39)) {
+                    // let it happen, don't do anything
+                    return;
+                }
+                // Ensure that it is a number and stop the keypress
+                if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                    e.preventDefault();
+                }
+            });</script>
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("card-products");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+            }
+
+            function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+                }
+            }
+
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- isotope plugin -->
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        <script>
+            // init Isotope
+            var $grid = $('#product-list').isotope({
+                // options
+            });
+            // filter items on button click
+            $('.filter-button-group').on('click', 'button', function () {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({ filter: filterValue });
+            });
+        </script>
+</body>
+
+</html>
