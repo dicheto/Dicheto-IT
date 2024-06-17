@@ -248,23 +248,6 @@ footer li {
     margin-left: 0px;
 }
 
-.btn-menu-nav {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #1562d6;
-    --bs-btn-border-color: #0d6efd;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #0b5ed7;
-    --bs-btn-hover-border-color: #0a58ca;
-    --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    --bs-btn-active-color: #ffffff;
-    --bs-btn-active-bg: #0a58ca;
-    --bs-btn-active-border-color: #0a53be;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #0d6efd;
-    --bs-btn-disabled-border-color: #0d6efd;
-}
-
 .dropdown {
     font-size: 30px;
 }
@@ -304,8 +287,8 @@ footer li {
     /* top: 41%;
     left: 35%; */
     position: absolute;
-    border: 2px solid rgb(111, 25, 203);
-    background-color: rgb(111, 25, 203);
+    border: 2px solid rgb(25, 34, 203);
+    background-color: rgb(0, 37, 246);
     color: white;
     font-size: 20px;
     border-radius: 100px;
@@ -318,20 +301,11 @@ footer li {
     font-size: 80px;
 
     position: absolute;
-    border: 2px solid rgb(111, 25, 203);
-    background-color: rgb(111, 25, 203);
+    border: 2px solid rgb(25, 34, 203);
+    background-color: rgb(25, 34, 203);
     color: white;
     font-size: 20px;
     border-radius: 100px;
-}
-
-.btn-login-socials {
-    border: 2px solid rgb(111, 25, 203);
-    background-color: rgb(111, 25, 203);
-    color: white;
-    font-size: 20px;
-    border-radius: 100px;
-
 }
 
 .btn-razg-buttons {
@@ -590,14 +564,6 @@ ion-icon {
 }
 
 
-/* Трябваше да направя този фикс заради промяната на ширината на екрана в менюто МОЯТ ПРОФИЛ.  */
-.modal-dialog-centered-fix {
-    align-items: center;
-    min-height: calc(100% - var(--bs-modal-margin) * 2);
-
-}
-
-
 
 /* div.cart-contacts input {
     width: 245px;
@@ -645,78 +611,8 @@ hr.solid {
     border: 1px solid #cbbeda;
 }
 
-.green-button,
-.active-btn-cart {
-    border: 2px solid #9c3 !important;
-}
-
-input.AddProduct-Cart::placeholder {
-    font-size: 15px;
-    display: flex;
-    vertical-align: middle;
-    align-self: center;
-}
-
-input.AddProduct-Cart {
-    height: 50px;
-}
-
-/* .AddProduct-Cart {
-    border: none;
-} */
-
-.Dostavka-Cart {
-    font-size: 15px;
-    font-family: 'Montserrat Alternates';
-    font-style: normal;
-    line-height: 1.5;
-    float: right;
-    color: #4c3663;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.Obshto-Cart {
-    color: black;
-    line-height: 1.5;
-    font-size: 23px;
-    font-weight: 700;
-    padding: 12px;
-    border-top: 1px solid #cbbeda;
-}
-
-div.free-delivery-alert {
-    color: #6b39a0 !important;
-    border-radius: 10px;
-    border: 1px solid #6b39a0 !important;
-}
-
 div.free-delivery-alert span ion-icon {
     color: #6b39a0 !important;
-}
-
-.harakteristiki-products {
-    border-radius: 10px;
-    border: 1px solid #cbbeda;
-}
-
-.Kod-marka-products {
-    font-size: 12px;
-
-}
-
-.color-swatches-product-page {
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 10px;
-}
-
-.Product-Tax-Notice {
-    font-family: 'Montserrat Alternates';
-    font-weight: 400;
-    color: #000;
-    font-size: 12px;
 }
 
 div.products-btn span {
@@ -729,46 +625,10 @@ div.Otzivi h2 {
     font-weight: 700;
 }
 
-.comment-add-btn {
-    padding: 8.40px 12px;
-    background-color: #6f19cb;
-    width: 260px;
-}
-
-textarea:hover {
-    border: 1px solid blue;
-}
-
-div.Dropdown-review {
-    border-radius: 10px;
-    border: 1px solid #cbbeda;
-}
-
-#Write-a-comment {
-    width: 95%;
-}
-
-div.review-stars {
-    color: #4c3663;
-}
-
 #search-icon {
     width: 24px;
     height: 24px;
     font-weight: 300;
-}
-
-.pop-up-header {
-    font-size: calc(12px + (6 * 0.3vmin));
-    font-weight: 700;
-}
-
-.border-radius-Delivery {
-    border-radius: 10px;
-}
-
-div.agreements {
-    color: black;
 }
 
 div.agreements a {
@@ -807,17 +667,10 @@ div#Login a {
     font-size: 12px;
 }
 
-body.blog {
-    background-color: rgba(255, 255, 255, 0);
-}
-
 .categories_product-preview {
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
-    /* Редовете, които ще се покажат - 2 */
     line-clamp: 2;
-    -webkit-box-orient: vertical;
     font-size: calc(12px + (2 * 0.3vmin));
     font-weight: 700;
     line-height: 1.5;
@@ -868,7 +721,6 @@ input.categories_filter-search-input::placeholder {
 
 ul#categories_sidebar_filter_manufacturers-list li {
     list-style: none;
-    --vh: 6.95px;
     font-family: 'Montserrat Alternates';
     font-weight: 400;
     color: #000;
@@ -882,9 +734,6 @@ ul#categories_sidebar_filter_manufacturers-list li {
 
 }
 
-ul#categories_sidebar_filter_manufacturers-list {
-    padding-left: 10px !important;
-}
 
 .categories_category-name {
     font-size: calc(12px + (6 * 0.3vmin));
@@ -945,8 +794,6 @@ select option:hover {
 .ms-btn-products {
     align-items: center;
 }
-
-/* Взето от Stack Overflow */
 .checkbox-circle {
     width: 20px;
     height: 20px;
@@ -966,15 +813,10 @@ select option:hover {
     width: 20px;
 
 }
-
-/* ------------------------ */
 label.categories_filter_Manufacturer-options {
     margin-right: 20px;
     font-size: calc(12px + (1 * 0.3vmin)) !important;
 }
-
-ul.categories_sidebar_filter_manufacturers-list li input {}
-
 .row-header {
     /* 
     ТЕСТ:
@@ -984,35 +826,6 @@ ul.categories_sidebar_filter_manufacturers-list li input {}
 }
 img.selection-img {
     max-width: 100%;
-}
-.product_cart-img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-}
-.product_cart-productName {
-    font-size: 14px;
-    line-height: 1.5;
-    border-bottom: 1px solid #654884;
-    font-family: 'Montserrat Alternates';
-    font-style: normal;
-    text-decoration: none !important;
-    font-weight: 700;
-}
-.cart_btn-quantity {
-    border-radius: 30px 0 0 30px;
-    background-color: #6f19cb;
-}
-.cart_btn-quantity-2 {
-    border-radius: 0 30px 30px 0;
-    background-color: #6f19cb;
-}
-
-.cart_label-products {
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.5;
-    font-size: calc(12px + (1 * 0.3vmin)) !important;
 }
 div.cart_product-locator span, div.cart_product-locator h3, div.cart_product-locator sup {
     color: #000;
@@ -1037,39 +850,6 @@ div.cart_product-locator span, div.cart_product-locator h3, div.cart_product-loc
     padding-left: 120px; 
     padding-right: 120px; 
     height: auto;
-}
-.Orders_none_paragraph ion-icon, .orders_none_paragraph ion-icon {
-    width: 48px;
-    height: 48px;
-}
-.orders_none_heading {
-    font-size: 19px;
-    font-weight: 700;
-    font-style: normal;
-    color: #000;
-    line-height: 1.5;
-}
-.Cart_modal-dialog {
-    max-width: 90% !important;
-}
-.OrdersAddress_modal-dialog {
-    max-width: 50% !important;
-}
-.ChangePassword_modal-dialog {
-    max-width: 60% !important;
-}
-.Password-change_inputs {
-    font-size: calc(12px + (1 * 0.3vmin));
-    border: 1px solid #cbbeda;
-    border-radius: 10px;
-    width: 100%;
-    height: 50px;
-}
-.PassordChange_strengthBar {
-    margin-left: calc(5px + 0px + (1 * 0.4vmin));
-    border: 1px solid #cbbeda;
-    height: 20px;
-    border-radius: 10px;
 }
 .PasswordChange_min-requirements li {
     font-size: 14px;
@@ -1128,49 +908,13 @@ ul.numbers li {
 ul.points li {
     list-style-type: disk;
 }
-.terms-of-use_red-bg {
-    line-height: 1.5;
-    font-size: 20px;
-    font-weight: 600;
-    background-color: #cc0000;
-}
-.pages-container {
-    max-width: 1024px;
-    margin: 20px 10px;
-    border: 1px solid #cbbeda;
-    border-radius: 10px;
-    padding: calc(5px + 0px + (4 * 0.4vmin));
-}
 body.dotavka-i-plashtane h2 {
     font-weight: 600 !important;
 }
-.border-none {
-    border: none !important;
-}
-.blog_preview-img {
-    max-width: 85%;
-}
+
 .hp_gallery img {
     object-fit: cover;
     height: 75%;
-}
-.blog_dates {
-    font-size: calc(12px + (1 * 0.3vmin));
-    font-weight: 400;
-    line-height: 1.5;
-}
-.blog_headings {
-    font-size: calc(12px + (4 * 0.3vmin));
-    font-weight: 700;
-    line-height: 1.5;
-    margin-top: 5px;
-}
-.border-blog-articles {
-    border: 1px solid #eee;
-    border-radius: 10px;
-}
-.border-blog-articles {
-    
 }
 .product_sku {
     font-weight: 400;
@@ -1235,51 +979,12 @@ body.dotavka-i-plashtane h2 {
     border-radius: 10px;
     border: 1px solid #cbbeda;
 }
-.page_count_slider-disabled {
-    font-size: calc(12px + (1 * 0.3vmin));
-    line-height: 1.5;
-    font-family: 'Montserrat Alternates';
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #cbbeda;
-    border-radius: 10px;
-    width: 35px;
-    height: 35px;
-}
-.page_count_slider-selected {
-    font-size: calc(12px + (1 * 0.3vmin));
-    line-height: 1.5;
-    font-weight: 400;
-    text-decoration: none !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #cbbeda;
-    border-radius: 10px;
-    width: 35px;
-    height: 35px;
-    transition: all 0.3s;
-    color: #fff;
-    background: #654884;
-    border-color: #4c3663;
-}
 .example_blogPost-ul li {
     margin: 40px 20px;
 }
 #aside-collapse {
     position: sticky;
     top: 0;
-}
-.show {
-    display: block;
-}
-div[id|="product-options-buttons"]:empty::after {
-    content: "Продуктът не наличен!";
-    
 }
 .color-swatches {
     display: none !important;
@@ -1303,4 +1008,7 @@ footer {
 }
 .product_reviews-btn, .product_reviews-heading {
     display: none !important;
+}
+.section_filters-sort {
+    display: none;
 }
