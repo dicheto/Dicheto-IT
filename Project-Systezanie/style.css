@@ -392,7 +392,7 @@ sup {
 
 div.categories-dropdown a:hover {
     background-color: white !important;
-    color: #654884;
+    color: #0007c7;
 }
 
 div.categories-dropdown a {
@@ -645,11 +645,11 @@ div#Login a {
 }
 
 .page-category-navigator {
-    background-color: #ebebf7;
+    background-color: #e8f0ff;
     font-size: calc(12px + (1 * 0.3vmin));
     font-weight: 400;
     line-height: 1.5;
-    color: #484b84;
+    color: #282d8b;
     border-bottom: 1px solid #bec2da;
 }
 
@@ -670,7 +670,9 @@ div#Login a {
 .categories_product-preview {
     overflow: hidden;
     display: -webkit-box;
+    -webkit-line-clamp: 2;
     line-clamp: 2;
+    -webkit-box-orient: vertical;
     font-size: calc(12px + (2 * 0.3vmin));
     font-weight: 700;
     line-height: 1.5;
@@ -738,14 +740,14 @@ ul#categories_sidebar_filter_manufacturers-list li {
 .categories_category-name {
     font-size: calc(12px + (6 * 0.3vmin));
     font-weight: 700;
-    color: #484c84;
+    color: #000ba4;
 }
 
 .categories_category-name_description {
     font-size: calc(12px + (1 * 0.3vmin));
     font-weight: 400;
     line-height: 1.5;
-    color: #4a4884;
+    color: #000ba4;
 }
 
 .categories_filter-button {
@@ -864,8 +866,6 @@ div.cart_product-locator span, div.cart_product-locator h3, div.cart_product-loc
 .PasswordChange_min-requirements li::before {
     content: '';
     border: 1px solid transparent;
-    border-right-color: currentColor;
-    border-bottom-color: currentColor;
     width: 7px;
     height: 14px;
     transform: rotate(35deg);
