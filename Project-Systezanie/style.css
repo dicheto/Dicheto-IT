@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@media (max-width: 400px) {
+    img.selection-img {
+        object-fit: contain;
+    }
+}
 * {
     margin: 0;
     box-sizing: border-box;
@@ -81,7 +85,7 @@
 }
 
 .bg {
-    background-image: url("https://cdn.mydreamshop.io/source/private/marchideo/pages/attachments/78125cddc9f09b2f4acd0529af94991bc4f96291/1690297230888164bfe38ed8d37127.jpg");
+    background-image: url("upload/images/1690297230888164bfe38ed8d37127.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
