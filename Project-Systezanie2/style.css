@@ -1,0 +1,572 @@
+#topBar {
+    background-color: #336633;
+    color: white;
+    text-align: center;
+}
+
+#topBar p {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    font-size: 14.2px;
+    align-items: center;
+}
+
+.header-logo {
+    max-width: 130%;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 2vb;
+}
+
+.navbar ul {
+    display: flex;
+    padding: 0px;
+}
+
+.navbar a {
+    text-align: center;
+}
+
+.navbar ion-icon {
+    font-size: 28px;
+    margin: 5px 0 0 0;
+}
+
+.socialButtons {
+    list-style: none;
+    display: flex;
+}
+
+.socialButtons li {
+    padding: 0 25px 0 0;
+}
+
+.socialButtons ion-icon {
+    font-size: 25px;
+    margin: 10px 0 0 0;
+}
+
+.socialButtons p {
+    text-align: end;
+}
+
+header a,
+a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.index_sectionOne {
+    margin-left: 0px;
+    padding-left: 120px;
+    padding-right: 120px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(hp-bannerimg.png);
+}
+
+.l-button {
+    font-weight: 700;
+    font-size: 34px;
+    height: 141px;
+    width: 623px;
+    background-color: rgba(0, 147, 0, 0.53);
+    color: white;
+}
+
+
+.rainbow {
+    text-align: center;
+    padding: 10px 0;
+    animation: colorRotate 5s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+    from {
+        color: #6666ff;
+    }
+
+    10% {
+        color: #0099ff;
+    }
+
+    50% {
+        color: #00b000;
+    }
+
+    75% {
+        color: #ff3399;
+    }
+
+    100% {
+        color: #6666ff;
+    }
+}
+
+.selection-img {
+    width: 60%;
+    object-fit: cover;
+}
+
+.carousel {
+    width: 100%;
+    text-align: start;
+}
+
+.carousel .img {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
+}
+
+.carousel .text {
+    padding: 35px;
+    padding-bottom: 20px;
+    padding-top: 0;
+}
+
+.carousel .text h3 {
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.carousel .text h3 a {
+    color: #fff;
+}
+
+.carousel .text .cat {
+    font-size: 12px;
+    color: #b063c5;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1px 8px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/* .carousel:hover {
+    transition: transform .5s;
+} */
+
+/* .carousel:hover {
+    p {
+        display: block !important;
+        transition: opacity 0.5s ease-in-out;
+        opacity: 1;
+    }
+
+
+} */
+div.carousel:hover p.shortDescription {
+    opacity: 1;
+    max-height: fit-content;
+    transition: opacity 0.2s ease-in;
+}
+
+div.carousel {
+    transition: transform 0.3s;
+}
+
+div.carousel:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+
+}
+
+.carousel p.shortDescription {
+    color: white !important;
+    padding: 5px 0;
+    opacity: 0;
+    /* visibility: hidden; */
+    max-height: 0;
+
+}
+
+.carousel a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-seeMore {
+    text-align: end;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-seeMore ion-icon {
+    font-size: 30px;
+}
+
+.trainOne div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/Shinkansen.png);
+}
+
+.trainTwo div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TGVDuplex.png);
+}
+
+.trainThree div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/ICEFour.png);
+}
+
+.trainFour div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainFour.jpg);
+}
+
+.trainFive div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainFive.jpg);
+}
+
+.trainSix div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainSix.jpg);
+}
+
+.trainSeven div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainSeven.jpg);
+}
+
+.trainEight div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainEight.jpg);
+}
+
+.trainNine div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainNine.jpg);
+}
+
+div.carousel div.img {
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+.section-SeeMore a {
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    animation: colorRotateForButtonBackground 3s linear 0s infinite;
+}
+
+@keyframes colorRotateForButtonBackground {
+    from {
+        background-color: #6666ff;
+    }
+
+    10% {
+        background-color: #0099ff;
+    }
+
+    50% {
+        background-color: #00b000;
+    }
+
+    75% {
+        background-color: #ff3399;
+    }
+
+    100% {
+        background-color: #6666ff;
+    }
+}
+
+.btn-tag {
+    width: auto;
+    height: auto;
+    padding: 5px 7px;
+    border: 2px solid #4c3663;
+    background-color: white;
+    color: #4c3663;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.trainPositives {
+    list-style: none;
+
+}
+
+.trainPositives ion-icon {
+    font-size: 25px;
+}
+
+.trainPositives-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.trainPositivesPoint:hover .trainPositives-description {
+    opacity: 1;
+    max-height: fit-content;
+    transition: all 1s;
+}
+
+.trainPositives-description {
+    padding-left: 35px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    max-height: 0;
+}
+
+footer {
+    height: 20vh;
+}
+
+footer * {
+    max-height: 100%;
+}
+
+footer img {
+    max-width: 100%;
+}
+
+nav li {
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+nav a:hover li {
+    opacity: 1;
+}
+
+.btn-footer {
+    animation: colorRotateForFooter 2s linear 0s infinite;
+}
+
+@keyframes colorRotateForFooter {
+    from {
+        border-color: #6666ff;
+        color: #6666ff;
+    }
+
+    10% {
+        border-color: #0099ff;
+        color: #0099ff;
+    }
+
+    50% {
+        border-color: #00b000;
+        color: #00b000;
+    }
+
+    75% {
+        border-color: #ff3399;
+        color: #ff3399;
+    }
+
+    100% {
+        border-color: #6666ff;
+        color: #6666ff;
+    }
+}
+
+.border-customized {
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.train-bgFix {
+    background-size: cover !important;
+    background-position-y: center;
+}
+
+.lg-bg-drive-type {
+    background: linear-gradient(135deg, #0A2A36, #56C1D0);
+    color: #fff;
+    border: none;
+}
+
+.lg-bg-power {
+    background: linear-gradient(135deg, #4B0039, #FF6B9A);
+    color: #fff;
+    border: none;
+}
+
+.lg-bg-max-speed {
+    background: linear-gradient(135deg, #1E4057, #5ED1FF);
+    color: #fff;
+    border: none;
+}
+
+.lg-bg-length {
+    background: linear-gradient(135deg, #2B3D34, #6CFFA3);
+    color: #fff;
+    border: none;
+
+}
+
+.lg-bg-track-width {
+    background: linear-gradient(135deg, #1B4C47, #77E6D4);
+    color: #fff;
+    border: none;
+}
+
+.lg-bg-car-count {
+    background: linear-gradient(135deg, #3C1A4F, #A275FF);
+    color: #fff;
+    border: none;
+}
+
+.lg-bg-weight {
+    background: linear-gradient(135deg, #263946, #5EB8A3);
+    color: #fff;
+    border: none;
+}
+
+.lg-bg-capacity {
+    background: linear-gradient(135deg, #1F3A47, #56E6C7);
+    color: #fff;
+    border: none;
+}
+
+.lg-bg-safety-systems {
+    background: linear-gradient(135deg, #293D5C, #7ACBFF);
+    color: #fff;
+    border: none;
+}
+
+.lg-bg-comfort-systems {
+    background: linear-gradient(135deg, #3E1A34, #FF73B6);
+    color: #fff;
+    border: none;
+}
+
+.lg-bg-acceleration {
+    background: linear-gradient(135deg, #0D3A42, #4FD7DF);
+    color: #fff;
+    border: none;
+}
+
+.lg-bg-braking-distance {
+    background: linear-gradient(135deg, #1F4A58, #72E1FF);
+    color: #fff;
+    border: none;
+}
+
+.lg-bg-service-frequency {
+    background: linear-gradient(135deg, #2B5145, #71FFA7);
+    color: #fff;
+    border: none;
+}
+
+.lg-bg-year-of-manufacture {
+    background: linear-gradient(135deg, #4A2E3A, #FF7399);
+    color: #fff;
+    border: none;
+}
+
+.product_sidebar-border {
+    border-radius: 10px;
+    border: 1px solid #cbbeda;
+}
+
+.product_title {
+    font-size: calc(12px + (6 * 0.3vmin));
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.product_brand {
+    line-height: 1.5;
+    border-bottom: 1px solid #654884;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.progress {
+    display: none;
+
+}
+
+div#product col,
+.card {
+    height: 100% !important;
+}
+
+.specifications {
+    height: 100%;
+}
+
+.nowrap {
+    white-space: nowrap;
+    font-size: 14px;
+    font-size: 3.4vw;
+}
+
+.carousel {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.slide img {
+    max-width: 75%;
+    display: block;
+    margin: auto;
+}
+
+.carousel-dots {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active,
+.dot:hover {
+    background-color: #333;
+}
+
+.trainPositives-image {
+    max-width: 75%;
+}
+
+.spamLinkFix {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.btn-productSpecifications {
+    margin: 30px 0;
+}

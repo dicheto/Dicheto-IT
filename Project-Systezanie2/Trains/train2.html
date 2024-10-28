@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Влак TGV Duplex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body> 
+    <section>
+        <div class="container" id="product">
+            <div class="row my-5">
+                <div class="col-12 col-md-7">
+                    <!-- <img style="max-width: 100%;" src="Assets/Images/Shinkansen.png" alt=""> -->
+                    <div class="carousel">
+                        <div class="carousel-slides">
+                          <div class="slide active"><img src="/Assets/Images/TGVDuplex/1.jpg" alt="Image 1"></div>
+                          <div class="slide"><img src="/Assets/Images/TGVDuplex/2.jpg" alt="Image 2"></div>
+                          <div class="slide"><img src="/Assets/Images/TGVDuplex/3.jpg" alt="Image 3"></div>
+                          <div class="slide"><img src="/Assets/Images/TGVDuplex/4.jpg" alt="Image 4"></div>
+                        </div>
+                        <div class="carousel-dots">
+                          <span class="dot active" onclick="showSlide(0)"></span>
+                          <span class="dot" onclick="showSlide(1)"></span>
+                          <span class="dot" onclick="showSlide(2)"></span>
+                          <span class="dot" onclick="showSlide(3)"></span>
+                        </div>
+                      </div>
+                      
+                </div>
+
+                <div class="col-12 col-sm-5" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true" >
+                    <div class="p-3 product_sidebar-border">
+                        <h1 class="product_title mb-0">Влак TGV Duplex</h1>
+                        <span class="product_brand">Alstom - Франция
+                        </span>
+                        <p class="product_mini-description mt-3">
+                            Кратко описание
+                        </p>
+                        <div class="row gap-2">
+                            <div class="col pe-0">
+                                <div class="card lg-bg-max-speed">
+                                    <div class="card-statistic-3 p-4">
+                                        <div class="mb-4">
+                                            <h5 class="card-title mb-0">MAX скорост</h5>
+                                        </div>
+                                        <div class="row align-items-center mb-2 d-flex">
+                                            <div class="col">
+                                                <h2 class="d-flex align-items-center mb-0">
+                                                    320
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="progress mt-1" style="height: 8px;">
+                                            <div class="progress-bar trainSpeed" role="progressbar" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ps-0">
+                                <div class="card lg-bg-power">
+                                    <div class="card-statistic-3 p-4">
+                                        <div class="mb-4">
+                                            <h5 class="card-title mb-0">Мощност</h5>
+                                        </div>
+                                        <div class="row align-items-center mb-2 d-flex">
+                                            <div class="col">
+                                                <h2 class="d-flex align-items-center mb-0">
+                                                    32 000 кВт
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="progress mt-1" style="height: 8px;">
+                                            <div class="progress-bar trainSpeed" role="progressbar" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card lg-bg-drive-type">
+                                    <div class="card-statistic-3 p-4">
+                                        <div class="mb-4">
+                                            <h5 class="card-title mb-0">Задвижване</h5>
+                                        </div>
+                                        <div class="row align-items-center mb-2 d-flex">
+                                            <div class="col">
+                                                <h2 class="d-flex align-items-center mb-0">
+                                                    Променлив ток
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-lg-flex d-block justify-content-center btn-productSpecifications">
+                <h3 class="text-center my-3 mx-2 border-bottom"><a href="#technicalSpecifiactions">Технически спцификации</a></h3>
+            <h3 class="text-center my-3 mx-2 border-bottom"><a href="#comfort">Комфорт</a></h3>
+            <h3 class="text-center my-3 mx-2 border-bottom"><a href="#safety">Безопасност</a></h3>
+            </div>
+            
+            <div class="border-customized py-3 px-4" id="technicalSpecifiactions" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
+                <h2 class="text-center">Технически спецификации</h2>
+                <div class="row my-3 gap-2">
+                    <div class="col">
+                        <div class="col pe-0">
+                            <div class="card lg-bg-drive-type">
+                                <div class="card-statistic-3 p-4">
+                                    <div class="mb-4 nowrap">
+                                        <h5 class="card-title mb-0">Задвижване</h5>
+                                    </div>
+                                    <div class="row align-items-center mb-2 d-flex">
+                                        <div class="col nowrap">
+                                            <h2 class="d-flex align-items-center mb-0">
+                                                Променлив ток                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col pe-0">
+                            <div class="card lg-bg-power">
+                                <div class="card-statistic-3 p-4">
+                                    <div class="mb-4 nowrap">
+                                        <h5 class="card-title mb-0">Мощност</h5>
+                                    </div>
+                                    <div class="row align-items-center mb-2 d-flex">
+                                        <div class="col nowrap">
+                                            <h2 class="d-flex align-items-center mb-0">
+                                                32 000 кВт
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col pe-0">
+                            <div class="card lg-bg-max-speed">
+                                <div class="card-statistic-3 p-4">
+                                    <div class="mb-4 nowrap">
+                                        <h5 class="card-title mb-0">MAX скорост</h5>
+                                    </div>
+                                    <div class="row align-items-center mb-2 d-flex">
+                                        <div class="col nowrap">
+                                            <h2 class="d-flex align-items-center mb-0">
+                                                320
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col pe-0">
+                            <div class="card lg-bg-length">
+                                <div class="card-statistic-3 p-4">
+                                    <div class="mb-4 nowrap">
+                                        <h5 class="card-title mb-0">Дължина</h5>
+                                    </div>
+                                    <div class="row align-items-center mb-2 d-flex">
+                                        <div class="col nowrap">
+                                            <h2 class="d-flex align-items-center mb-0">
+                                                200 м/вагон
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3 gap-2">
+                    <div class="col">
+                        <div class="col pe-0">
+                            <div class="card lg-bg-track-width">
+                                <div class="card-statistic-3 p-4">
+                                    <div class="mb-4 nowrap">
+                                        <h5 class="card-title mb-0">Коловоз</h5>
+                                    </div>
+                                    <div class="row align-items-center mb-2 d-flex">
+                                        <div class="col nowrap">
+                                            <h2 class="d-flex align-items-center mb-0">
+                                                1435 мм
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col pe-0">
+                            <div class="card lg-bg-car-count">
+                                <div class="card-statistic-3 p-4">
+                                    <div class="mb-4 nowrap">
+                                        <h5 class="card-title mb-0">Вагони</h5>
+                                    </div>
+                                    <div class="row align-items-center mb-2 d-flex">
+                                        <div class="col nowrap">
+                                            <h2 class="d-flex align-items-center mb-0">
+                                                10 (2 етажа)
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col pe-0">
+                            <div class="card lg-bg-weight">
+                                <div class="card-statistic-3 p-4">
+                                    <div class="mb-4 nowrap">
+                                        <h5 class="card-title mb-0">Тегло</h5>
+                                    </div>
+                                    <div class="row align-items-center mb-2 d-flex">
+                                        <div class="col nowrap">
+                                            <h2 class="d-flex align-items-center mb-0">
+                                                400 т/вагон
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col pe-0">
+                            <div class="card lg-bg-capacity">
+                                <div class="card-statistic-3 p-4">
+                                    <div class="mb-4 nowrap">
+                                        <h5 class="card-title mb-0">Капацитет</h5>
+                                    </div>
+                                    <div class="row align-items-center mb-2 d-flex">
+                                        <div class="col nowrap">
+                                            <h2 class="d-flex align-items-center mb-0">
+                                                800
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3 gap-2">
+                    <div class="col">
+                        <div class="col pe-0">
+                            <div class="card lg-bg-acceleration">
+                                <div class="card-statistic-3 p-4">
+                                    <div class="mb-4 nowrap">
+                                        <h5 class="card-title mb-0">Ускорение</h5>
+                                    </div>
+                                    <div class="row align-items-center mb-2 d-flex">
+                                        <div class="col nowrap">
+                                            <h2 class="d-flex align-items-center mb-0">
+                                                1.2 m/s²
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col pe-0">
+                            <div class="card lg-bg-braking-distance">
+                                <div class="card-statistic-3 p-4">
+                                    <div class="mb-4 nowrap">
+                                        <h5 class="card-title mb-0">Спирачен път</h5>
+                                    </div>
+                                    <div class="row align-items-center mb-2 d-flex">
+                                        <div class="col nowrap">
+                                            <h2 class="d-flex align-items-center mb-0">
+                                                2 км от 320 км/ч                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col pe-0">
+                            <div class="card lg-bg-service-frequency">
+                                <div class="card-statistic-3 p-4">
+                                    <div class="mb-4 nowrap">
+                                        <h5 class="card-title mb-0">Обслужване</h5>
+                                    </div>
+                                    <div class="row align-items-center mb-2 d-flex">
+                                        <div class="col nowrap">
+                                            <h2 class="d-flex align-items-center mb-0">
+                                                Различна по линии
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col pe-0">
+                            <div class="card lg-bg-year-of-manufacture">
+                                <div class="card-statistic-3 p-4">
+                                    <div class="mb-4 nowrap">
+                                        <h5 class="card-title mb-0">Година</h5>
+                                    </div>
+                                    <div class="row align-items-center mb-2 d-flex">
+                                        <div class="col nowrap">
+                                            <h2 class="d-flex align-items-center mb-0">
+                                                от 1990 г.
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-customized my-2 py-3 px-4" id="comfort" >
+                <h2 class="text-center">Възможности за комфорт</h2>
+	Индивидуални екрани, бар, ресторант
+            </div>
+            <div class="border-customized my-2 py-3 px-4" id="safety" >
+                <h2 class="text-center">Възможности за Безопасност</h2>
+	Система за автоматично спиране при авария, система за контрол на наклона
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ disable: 'mobile' });
+    </script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заглавие</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        @media (max-width: 610px) {
+            .index_sectionOne {
+                padding: 0;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .btn-hp-sectionOne {
+                width: 100%;
+            }
+            .header-logo {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 498px) {
+            .navbar li{
+                max-width: 0;
+                max-height: 0;
+            }
+            nav a:hover li {
+                opacity: 0;
+            }
+            nav a {
+                margin: 10px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section id="topBar">
+            <p>Добре дошли в сайта на Българските държавни влакостроители АД. Чувствайте се като у дома.</p>
+        </section>
+        <section class="border-bottom">
+            <div class="container-xl">
+                <div class="row justify-content-around">
+                    <div class="col-12 col-md-2 d-flex justify-content-center"><img class="header-logo" src="logo.png" alt=""></div>
+                    <div class="col-12 col-md justify-content-around d-flex align-items-center">
+                        <nav class="navbar justify-content-center w-100">
+                            <ul>
+                                <a href="/index.html">
+                                    <li>Начало </li>
+                                    <p><ion-icon name="home-outline"></ion-icon></p>
+                                </a>
+                                <a href="/trains.html">
+                                    <li>Влакове </li>
+                                    <p><ion-icon name="train-outline"></ion-icon></p>
+                                </a>
+                                <a href="/AboutUs.html">
+                                    <li>За нас </li>
+                                    <p><ion-icon name="information-outline"></ion-icon></p>
+                                </a>
+                                <a href="/Contacts.html">
+                                    <li>Контакти </li>
+                                    <p><ion-icon name="send-outline"></ion-icon></p>
+                                </a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-2 d-flex justify-content-center">
+                        <ul class="h-100 align-items-center socialButtons">
+                            <li><a href="">
+                                    <p><ion-icon name="call-outline"></ion-icon></p>
+                                </a></li>
+                            <li><a href="">
+                                    <p><ion-icon name="mail-outline"></ion-icon></p>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section>
+        <div class="index_sectionOne row row-fix align-items-center position-relative text-center w-100 bg">
+            <div style="height: 77vb;"
+                class="row btn-hp-section1 row-fix position-relative align-items-center w-auto text-center">
+                <span data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"
+                    class="text-center align-items-center h-auto w-auto pt-4 pb-4 p-auto l-button">Запалете страстта си
+                    🔥
+                    <br> към железниците 🚆
+                </span>
+            </div>
+        </div>
+
+    </section>
+    <section class="hp-bg-sectionTwo">
+        <div class="container text-center mx-auto  border-customized px-2 pb-3 pt-2 my-3">
+            <h3 class="rainbow">Най-най-яките влакове</h3>
+            <div class="row gap-4 mx-3">
+                <div class="col">
+                    <div class="carousel trainOne">
+                        
+                        <div class="img d-flex align-items-end justify-content-center">
+                            <a href="/Trains/train1.html"><span class="spamLinkFix"></span></a>
+                            <div class="text w-100">
+                                <h3><a href="#">Shinkansen</a></h3>
+                                <p class="shortDescription">Японски високоскоростен влак, известен с комфорта и тихата
+                                    си работа.</p>
+                                <p class="btn-seeMore align-items-center justify-content-end d-flex">Повече
+                                    информация<ion-icon name="chevron-forward-outline"></ion-icon></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="carousel trainTwo">
+                        <div class="img d-flex align-items-end justify-content-center">
+                            <a href="/Trains/train2.html"><span class="spamLinkFix"></span></a>
+                            <div class="text w-100">
+                                <h3><a href="#">TGV Duplex</a></h3>
+                                <p class="shortDescription">Френски високоскоростен влак с двойна палуба, предлагащ
+                                    голям капацитет на пътниците.</p>
+                                <p class="btn-seeMore align-items-center justify-content-end d-flex">Повече
+                                    информация<ion-icon name="chevron-forward-outline"></ion-icon></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="carousel trainThree">
+                        <div class="img d-flex align-items-end justify-content-center">
+                            <a href="/Trains/train3.html"><span class="spamLinkFix"></span></a>
+                            <div class="text w-100">
+                                <h3><a href="#">ICE 4</a></h3>
+                                <p class="shortDescription">Немски високоскоростна влак, отличаващ се с модерен
+                                    дизайн и висока степен на автоматизация.</p>
+                                <p class="btn-seeMore align-items-center justify-content-end d-flex">Повече
+                                    информация<ion-icon name="chevron-forward-outline"></ion-icon></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="d-flex justify-content-center my-4 section-SeeMore">
+                <a href="trains.html">РАЗГЛЕДАЙ ОЩЕ ЯКИ ВЛАКОВЕ</a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container my-3">
+        <div class="row">
+            <div class="col-12 col-md-6 order-2 d-flex justify-content-center text-center">
+                <div class="my-3">
+                    <button class="btn-tag">Влакове за бъдещето</button>
+                    <h3>
+                        Позитивите на влаковите композиции
+                    </h3>
+                    <p class="text-start">Влаковете имат страшно много позитиви, които можем открито да забележим и на
+                        нашите ширини. Приятелствата, направени във влака понякога са вечни с тези закъснения. Част от
+                        хубавите неща са тук:</p>
+                    <ul class="text-start trainPositives ps-2">
+                        <li class="my-2 trainPositivesPoint">
+                            <p class="trainPositives-title"><ion-icon name="checkmark-outline"></ion-icon>По-малко
+                                вредни емисии
+                            </p>
+                            <p class="trainPositives-description">Влаковете произвеждат значително по-малко вредни
+                                емисии на километър пътник, в сравнение с автомобилите и самолетите. Това ги прави
+                                по-екологичен избор.
+                            </p>
+
+                        </li>
+
+                        <li class="my-2 trainPositivesPoint">
+                            <p class="trainPositives-title"><ion-icon name="checkmark-outline"></ion-icon>По-малко
+                                задръствания
+                            </p>
+
+                            <p class="trainPositives-description">Влаковете не са засегнати от задръстванията по
+                                пътищата и могат да осигурят по-предсказуемо време за пътуване. Ама все пак пътуването с
+                                БДЖ е непредсказуемо.
+
+                            </p>
+                        </li>
+                        <li class="my-2 trainPositivesPoint">
+                            <p class="trainPositives-title"><ion-icon name="checkmark-outline"></ion-icon>По-добро
+                                преживяване
+                            </p>
+                            <p class="trainPositives-description">Пътуването с влак може да бъде по-социално
+                                преживяване, тъй като позволява на пътниците да се срещнат и да общуват с други хора.
+
+                            </p>
+                        </li>
+                        <li class="my-2 trainPositivesPoint">
+                            <p class="trainPositives-title"><ion-icon name="checkmark-outline"></ion-icon>По-малко стрес
+                            </p>
+                            <p class="trainPositives-description">Пътуването с влак може да бъде по-малко стресиращо,
+                                тъй като не изисква шофиране или паркиране.
+
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center"><img class="trainPositives-image" src="/Assets/Images/eurostar/1.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <footer class="h-auto container">
+        <div class="row">
+            <div class="col-2"><img src="logo.png" alt=""></div>
+            <div class="col d-flex justify-content-end align-items-center">
+                <nav class="navbar justify-content-end w-100">
+                    <ul>
+                        <a href="">
+                            <li>Начало </li>
+                            <p><ion-icon name="home-outline"></ion-icon></p>
+                        </a>
+                        <a href="">
+                            <li>Влакове </li>
+                            <p><ion-icon name="train-outline"></ion-icon></p>
+                        </a>
+                        <a href="">
+                            <li>За нас </li>
+                            <p><ion-icon name="information-outline"></ion-icon></p>
+                        </a>
+                        <a href="">
+                            <li>Контакти </li>
+                            <p><ion-icon name="send-outline"></ion-icon></p>
+                        </a>
+                        <a href="">
+                            <li>Блог </li>
+                            <p><ion-icon name="newspaper-outline"></ion-icon></p>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="text-center mb-2 btn-tag btn-footer">
+                Всички права запазени 2024
+            </button>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ disable: 'mobile' });
+    </script>
+
+</body>
+
+</html>
